@@ -1,8 +1,12 @@
 const navbarHTML = `
 <nav class="bg-secondary-selected top-section bg-secondary-selected" >
-  <h1 class="font-bold" style="font-size: 4vh;">
-      <a href="index.html" class="hover:underline hover:text-special">G's Lore</a>
-  </h1>
+
+  <a href="index.html">
+      <img src="./assets/images/logo.png" 
+        alt="Fiverr" 
+        style="height: 5vh; width: auto;" 
+        class="object-contain hover:opacity-80">
+  </a>
 
   <div class="flex space-x-4 items-center">
     <a href="https://x.com/themodderG" target="_blank" class="hover:text-blue-400">
