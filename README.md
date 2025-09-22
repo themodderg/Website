@@ -1,2 +1,2 @@
-Source of the webpage I made from scratch with tailwind 
+Source of my webpage, made with just tailwind 
 www.codderg.com
