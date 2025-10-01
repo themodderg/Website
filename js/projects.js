@@ -6,7 +6,10 @@ const projects = [
     img: "./assets/images/td_logo.png", color:"td-text", w:4.5},
   
   { title: "Model Portfolio", desc: "Compilation of my best 3D Blockbench assets.", link: "portfolio.html", 
-    img: "./assets/images/p_logo.png", color:"p-text", w:3}
+    img: "./assets/images/p_logo.png", color:"p-text", w:3},
+  
+  { title: "????", desc: "??????", link: "index.html", 
+    img: "./assets/images/unknown_logo.png", color:"td-text", w:3}
 ];
 
 
@@ -16,11 +19,12 @@ document.getElementById("projects-container").innerHTML = projects.map(p => `
     <img src="${p.img}" alt="${p.title}" class="project-image">
   </div>
 
-  <div>
+  <div style="flex:1 1 auto;min-width:0;">
     <span class="project-title ${p.color}">${p.title}</span>
-    <div class="project-title secondary-selected-line"></div>
+    <div class="project-title secondary-selected-line" style="display:block;width:100%;height:2px;"></div>
     <p class="project-desc">${p.desc}</p>
   </div>
+
 </a>
 
 `).join('');
