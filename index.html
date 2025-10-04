@@ -9,6 +9,10 @@
   <script>
       window.ezstandalone = window.ezstandalone || {};
       ezstandalone.cmd = ezstandalone.cmd || [];
+
+      ezstandalone.cmd.push(function () {
+        ezstandalone.showAds(101, 102, 103);
+    });
   </script>
 
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2592338544514821"
@@ -30,17 +34,17 @@
 </section>
 
 <!-- Ad -->
-  <div id="ezoic-pub-ad-placeholder-101"
-         class=" xl:hidden block"
-         style="height:10vh; margin:1vw;">
+  <div class="xl:hidden block"
+         style="height:10vw; margin:1vw;">
+    <div id="ezoic-pub-ad-placeholder-101"></div>
   </div>
 
 <div class="flex" style="flex:1">
 
   <!-- Ad -->
-  <div id="ezoic-pub-ad-placeholder-102"
-         class=" xl:block hidden"
+  <div class=" xl:block hidden"
          style="width:10vw; margin:1vw;">
+    <div id="ezoic-pub-ad-placeholder-102"></div>
   </div>
 
   <!-- Projects -->
@@ -51,9 +55,9 @@
   </section>
 
   <!-- Ad -->
-  <div id="ezoic-pub-ad-placeholder-103"
-         class=" xl:block hidden"
+  <div class=" xl:block hidden"
          style="width:10vw; margin:1vw;">
+    <div id="ezoic-pub-ad-placeholder-103"></div>
   </div>
 
 </div>
@@ -61,12 +65,5 @@
 
 <script src="./js/projects.js"></script>
 <script src="./js/common.js"></script>
-<script>
-    ezstandalone.cmd.push(function () {
-        ezstandalone.showAds(101);
-        ezstandalone.showAds(102);
-        ezstandalone.showAds(103);
-    });
-</script>
 </body>
 </html>
