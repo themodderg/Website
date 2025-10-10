@@ -1,5 +1,5 @@
 const navbarHTML = `
-<nav class="bg-secondary-selected top-section bg-secondary-selected" >
+<nav class="top-section" >
 
   <a href="index.html">
       <img src="./assets/images/logo.png" 

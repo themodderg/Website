@@ -2,41 +2,69 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>G's Lore</title>
+  <title>TB Wiki</title>
+  <script src="https://cmp.gatekeeperconsent.com/min.js" data-cfasync="false"></script>
+  <script src="https://the.gatekeeperconsent.com/cmp.min.js" data-cfasync="false"></script>
+  <script async src="//www.ezojs.com/ezoic/sa.min.js"></script>
+  <script>
+      window.ezstandalone = window.ezstandalone || {};
+      ezstandalone.cmd = ezstandalone.cmd || [];
 
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2592338544514821"
-     crossorigin="anonymous"></script>
+      ezstandalone.cmd.push(function () {
+        ezstandalone.showAds(104, 105, 106);
+    });
+  </script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2592338544514821" crossorigin="anonymous"></script>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
   <link rel="stylesheet" href="./css/sections.css">
   <link rel="stylesheet" href="./css/projects.css">
-  <link rel="stylesheet" href="./css/mob_lores.css">
   <link rel="icon" type="image/png" href="assets/images/logo.png">
 </head>
-<body class="bg-primary text-color border-secondary-selected">
+<body>
 
 <!-- Logo -->
-<h2 class="bg-secondary p-10">
-  <img src="./assets/images/tameable_beasts/logo.png" style="display: block; margin: 0 auto; width: 25rem;">
+<h2 class="hero">
+  <img src="./assets/images/tameable_beasts/logo.png" style="display: block; margin: 0 auto; width: 40vh;">
 </h2>
 
-<!-- Gang -->
-<div class="bg-primary p-20">
-  <img src="./assets/images/tameable_beasts/gang.png"
-  style="display: block; margin: 0 auto; width: 50rem;">
+<!-- Ad -->
+<div class="xl:hidden block vertical-visible-ad">
+    <div id="ezoic-pub-ad-placeholder-104"></div>
+ </div>
+
+<div class="flex justify-between" style="width: 100%;">
+  <!-- Ad -->
+  <div class="xl:block hidden horizontal-visible-ad">
+    <div id="ezoic-pub-ad-placeholder-105"></div>
+  </div>
+
+  <!-- Gang -->
+  <div class="p-5">
+    <img src="./assets/images/tameable_beasts/gang.png"
+    style="margin: 0 auto; height: 36rem;"></img>
+
+    <!-- Tameable Beasts -->
+    <h2 id="tb-lore" class="lore-box" style="width:100%;"></h2>
+  </div>
+
+  <!-- Ad -->
+  <div class="xl:block hidden horizontal-visible-ad">
+    <div id="ezoic-pub-ad-placeholder-106"></div>
+  </div>
+
 </div>
 
-<!-- Tameable Beasts -->
-<h2 id="tb-lore" class="base-secondary-section p-10 w-11/12 xl:w-3/5 mx-auto rounded-lg"></h2>
 
-<div class="p-10"></div>
 
 <!-- Mobs -->
-<div>
+<div class="mb-1">
   <details>
     <!-- Button -->
-    <summary class="cursor-pointer font-bold text-center p-6 list-none base-secondary-hoverable" style="font-size: 4vh;">
+    <summary class="cursor-pointer font-bold text-center p-4 list-none secondary-button" style="font-size: 4vh;">
       MOBS
     </summary>
     
@@ -44,69 +72,69 @@
     <div>
           <!-- Common -->
           <img src="./assets/images/tameable_beasts/common.png" class="mob-pic">
-          <h2 id="common-lore" class="base-secondary-section p-10 rounded-lg" style="width: 60rem; margin: 0 auto;"></h2>
+          <h2 id="common-lore" class="lore-box"></h2>
           
           <!-- Racoon -->
           <img src="./assets/images/tameable_beasts/racoon.png" class="mob-pic">
-          <h2 id="racoon-lore" class="base-secondary-section p-10 rounded-lg" style="width: 60rem; margin: 0 auto;"></h2>
+          <h2 id="racoon-lore" class="lore-box"></h2>
 
           <!-- Penguin -->
           <img src="./assets/images/tameable_beasts/penguin.png" class="mob-pic">
-          <h2 id="penguin-lore" class="base-secondary-section p-10 rounded-lg" style="width: 60rem; margin: 0 auto;"></h2>
+          <h2 id="penguin-lore" class="lore-box"></h2>
 
           <!-- Chikote -->
           <img src="./assets/images/tameable_beasts/chikote.png" class="mob-pic">
-          <h2 id="chikote-lore" class="base-secondary-section p-10 rounded-lg" style="width: 60rem; margin: 0 auto;"></h2>
+          <h2 id="chikote-lore" class="lore-box"></h2>
 
           <!-- Shiny Beetle -->
           <img src="./assets/images/tameable_beasts/shiny_beetle.png" class="mob-pic">
-          <h2 id="shiny-beetle-lore" class="base-secondary-section p-10 rounded-lg" style="width: 60rem; margin: 0 auto;"></h2>
+          <h2 id="shiny-beetle-lore" class="lore-box"></h2>
 
           <!-- Scarecrow -->
           <img src="./assets/images/tameable_beasts/scarecrow.png" class="mob-pic">
-          <h2 id="scarecrow-lore" class="base-secondary-section p-10 rounded-lg" style="width: 60rem; margin: 0 auto;"></h2>
+          <h2 id="scarecrow-lore" class="lore-box"></h2>
 
           <!-- Grapteranodon -->
           <img src="./assets/images/tameable_beasts/graptera.png" class="mob-pic">
-          <h2 id="graptera-lore" class="base-secondary-section p-10 rounded-lg" style="width: 60rem; margin: 0 auto;"></h2>
+          <h2 id="graptera-lore" class="lore-box"></h2>
 
           <!-- Argentavis -->
           <img src="./assets/images/tameable_beasts/argentavis.png" class="mob-pic">
-          <h2 id="argentavis-lore" class="base-secondary-section p-10 rounded-lg" style="width: 60rem; margin: 0 auto;"></h2>
+          <h2 id="argentavis-lore" class="lore-box"></h2>
 
           <!-- Quetzal -->
           <img src="./assets/images/tameable_beasts/quetzal.png" class="mob-pic">
-          <h2 id="quetzal-lore" class="base-secondary-section p-10 rounded-lg" style="width: 60rem; margin: 0 auto;"></h2>
+          <h2 id="quetzal-lore" class="lore-box"></h2>
 
           <!-- Ground Beetle -->
           <img src="./assets/images/tameable_beasts/ground_beetles.png" class="mob-pic">
-          <h2 id="ground-beetle-lore" class="base-secondary-section p-10 rounded-lg" style="width: 60rem; margin: 0 auto;"></h2>
+          <h2 id="ground-beetle-lore" class="lore-box"></h2>
 
           <!-- Roly Poly -->
           <img src="./assets/images/tameable_beasts/roly_poly.png" class="mob-pic">
-          <h2 id="roly-poly-lore" class="base-secondary-section p-10 rounded-lg" style="width: 60rem; margin: 0 auto;"></h2>
+          <h2 id="roly-poly-lore" class="lore-box"></h2>
 
           <!-- Grasshoper -->
           <img src="./assets/images/tameable_beasts/grasshopper.png" class="mob-pic">
-          <h2 id="grasshopper-lore" class="base-secondary-section p-10 rounded-lg" style="width: 60rem; margin: 0 auto;"></h2>
+          <h2 id="grasshopper-lore" class="lore-box"></h2>
 
           <!-- Gecko -->
           <img src="./assets/images/tameable_beasts/gecko.png" class="mob-pic">
-          <h2 id="gecko-lore" class="base-secondary-section p-10 rounded-lg" style="width: 60rem; margin: 0 auto;"></h2>
+          <h2 id="gecko-lore" class="lore-box"></h2>
 
           <!-- Fur Golem -->
           <img src="./assets/images/tameable_beasts/fur_golem.png" class="mob-pic">
-          <h2 id="fur-golem-lore" class="base-secondary-section p-10 rounded-lg" style="width: 60rem; margin: 0 auto;"></h2>
+          <h2 id="fur-golem-lore" class="lore-box"></h2>
 
           <div class="p-10"></div>
   </details>
 </div>
 
 <!-- Blocks -->
-<div>
+<div class="mb-1">
   <details>
     <!-- Button -->
-    <summary class="cursor-pointer font-bold text-center p-6 list-none base-secondary-hoverable" style="font-size: 4vh;">
+    <summary class="cursor-pointer font-bold text-center p-4 list-none secondary-button" style="font-size: 4vh;">
       BLOCKS
     </summary>
     
@@ -114,12 +142,12 @@
     <div>
       <!-- Fur Golem -->
           <img src="./assets/images/tameable_beasts/eggs.png" class="mob-pic">
-          <h2 id="eggs-lore" class="base-secondary-section p-10 rounded-lg" style="width: 60rem; margin: 0 auto;"></h2>
-    </div>
+          <h2 id="eggs-lore" class="lore-box"></h2>
 
     <div class="p-10"></div>
   </details>
 </div>
+
 
 <script src="./js/common.js"></script>
 <script src="./js/texts/tameable_beasts.js"></script>
