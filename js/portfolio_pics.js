@@ -18,7 +18,10 @@ const pics = [
   {img: "teddy.png"},
   {img: "shiny_beetle.png"},
   {img: "ground_beetle.png"},
-  {img: "quetzal.png"}
+  {img: "quetzal.png"},
+  {img: "scarecrow.png"},
+  {img: "graptera.png"},
+  {img: "argentavis.png"}
 ];
 
 function renderPics() {
