@@ -15,7 +15,10 @@ const pics = [
   {img: "sword_shade.png"},
   {img: "quadruped_shade.png"},
   {img: "roly_poly.png"},
-  {img: "teddy.png"}
+  {img: "teddy.png"},
+  {img: "shiny_beetle.png"},
+  {img: "ground_beetle.png"},
+  {img: "quetzal.png"}
 ];
 
 function renderPics() {
