@@ -160,20 +160,3 @@ body {
     height: 20vw;
     margin: 1vw;
 }
-
-.vertical-visible-ad {
-    height: 20vw;
-    margin: 1vw;
-    border: 2px dashed #ffffff;
-}
-
-.horizontal-ad {
-    width: 10vw;
-    margin: 1vw;
-}
-
-.horizontal-visible-ad {
-    width: 10vw;
-    margin: 1vw;
-    border: 2px dashed #ffffff;
-}
