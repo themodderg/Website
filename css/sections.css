@@ -148,6 +148,7 @@ body {
     margin: 0 auto;
     width: 95%;
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
 }
 
 @media (min-width:1280px) {

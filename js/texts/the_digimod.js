@@ -79,3 +79,99 @@ document.getElementById("evo-conds").innerHTML = `
   </p>
 `;
 
+
+document.getElementById("evo-digitron").innerHTML = `
+  <p class="font-bold" style="font-size: 2vh;">
+    <span class="text-special">SLIDE EVOLUTION</span>: Digimon don't just mature into stronger higher level 
+    forms, they can also transform into another digimon of the same level via <span class="text-orange">slide evolution</span>. Currently the only
+    means to <span class="text-orange">slide evolve</span> is to interact with <span class="text-orange">Black Digitron</span>
+     on a digimon that has a <span class="text-orange">dark counterpart</span>.
+    Digimon can also <span class="text-orange">de-evolve</span> into previous stages when exposed to 
+    <span class="text-orange">Dark Tower Shards</span>.
+  </p>
+`;
+
+
+document.getElementById("faq-digivices").innerHTML = `
+  <p class="font-bold" style="font-size: 2vh;">
+    <span class="text-special">DIGIVICES</span>: You will eventually get or craft a <span class="text-orange">Digivice</span>, these are a group of 
+    items which share special properties. You can use them to open a <span class="text-orange">GUI</span>
+     when interacting with a digimon, menu which will
+    allow you to check out your digimon's <span class="text-orange">stats</span>, 
+    <span class="text-orange">evolution tree</span> and even <span class="text-orange">command</span> them to perform certain actions. Don't 
+    be fooled by their different shapes and colors, the different presentations of Digivices don't have additional features to one another.
+  </p>
+`;
+
+
+document.getElementById("faq-commands").innerHTML = `
+  <p class="font-bold" style="font-size: 2vh;">
+    <span class="text-special">COMMANDS</span>: When interacting with a partner digimon, the <span class="text-orange">command</span> 
+    buttons will appear, button that will
+    allow you to <span class="text-orange">command</span> your digimon. Using commands you can <span class="text-orange">control</span> the
+     <span class="text-orange">behaviour</span> of your digimon or even turn them into items to be stored.
+    <br><br> The commands you have access to are the following:<br>
+    - <span class="text-orange">Attack</span> aimed target.<br>
+    - <span class="text-orange">Sit</span>.<br>
+    - <span class="text-orange">Follow</span>.<br>
+    - <span class="text-orange">Wander</span>.<br>
+    - Open <span class="text-orange">inventory</span>.<br>
+    - <span class="text-orange">Auto feed</span> from player inventory.<br>
+    - <span class="text-orange">Fly</span>.<br>
+    - <span class="text-orange">Teleport</span> near tamer.<br>
+    - <span class="text-orange">Work</span>.<br>
+    - Convert into <span class="text-orange">digimemory</span>.<br>
+    - Open full <span class="text-orange">evolution tree</span>.<br>
+    <br>
+    If you <span class="text-orange">aim</span> to a <span class="text-orange">specific partner</span> digimon when using the digivice,
+     commands will be ran <span class="text-orange">specifically</span> for it, 
+    <span class="text-orange">otherwise</span> they will get applied to <span class="text-orange">every</span> digimon from your party nearby.
+  </p>
+`;
+
+
+document.getElementById("faq-goods").innerHTML = `
+  <p class="font-bold" style="font-size: 2vh;">
+    <span class="text-special">TRAINNING GOODS</span>: If you want to <span class="text-orange">win battles</span> to 
+    <span class="text-orange">level up</span> and thus <span class="text-orange">evolve</span>
+     your digimon or even to get <span class="text-orange">more digimon</span>, you need a <span class="text-orange">strong</span> 
+     partner. <span class="text-orange">Training gear</span> will be
+      given to you at <span class="text-orange">first join</span> but dont worry they can be also <span class="text-orange">crafted</span>. Digimon get their 
+      <span class="text-orange">stats increased</span> by targeting the training goods and hitting them, be careful though as digimon 
+      get tired and can get <span class="text-orange">sad</span> when <span class="text-orange">overtrained</span>. 
+  </p>
+`;
+
+
+document.getElementById("faq-moves").innerHTML = `
+  <p class="font-bold" style="font-size: 2vh;">
+    <span class="text-special">SPECIALL ATTACK CHIPS</span>: You <span class="text-orange">want</span> your digimon to be
+     <span class="text-orange">strong</span>, defeating other digimon
+    <span class="text-orange">levels up</span> your digimon, <span class="text-orange">unlocks evolutions</span>
+     and additionally defeated foes may <span class="text-orange">drop useful items</span>. 
+    One of the ways to get your digimon <span class="text-orange">stronger</span> is to make them learn <span class="text-orange">new moves</span>, digimon can absorb the knowledge
+    in data form from <span class="text-orange">Special Attack Chips</span> dropped by foe digimon.
+     In theory ,you could this way get a Koromon that shoots missiles.
+  </p>
+`;
+
+
+document.getElementById("faq-advanced-goods").innerHTML = `
+  <p class="font-bold" style="font-size: 2vh;">
+    <span class="text-special">ADVANCED GOODS</span>: Additonally <span class="text-orange">special training goods</span>
+     can be crafted which not only provide a
+     <span class="text-orange">higher stat</span> increase than the basic ones,
+      they also have a small chance of providing <span class="text-orange">data</span> to the digimon which is training with them.
+     These goods are also <span class="text-orange">craftable</span>.
+  </p>
+`;
+
+
+document.getElementById("faq-bytes").innerHTML = `
+  <p class="font-bold" style="font-size: 2vh;">
+    <span class="text-special">STAT BYTES</span>: <span class="text-orange">Stats</span> can also get <span class="text-orange">raised</span>
+     by the consuption of <span class="text-orange">bytes</span>. <span class="text-orange">Stat Bytes</span> have a
+     small chance of being <span class="text-orange">dropped</span> by wild digimon (except babies).
+  </p>
+`;
+
