@@ -149,3 +149,19 @@ body {
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
     margin-bottom: 1rem;
 }
+
+.ad-sidebar {
+  width: 20vw;
+  background-color: #ffffff;
+  min-height: 100vh;
+  flex: none;
+}
+
+.ad-sticky {
+  position: sticky;
+  top: 6rem;
+}
+
+.ad-inner {
+  padding: 1rem;
+}
