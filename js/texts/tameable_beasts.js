@@ -1,7 +1,7 @@
 document.getElementById("tb-lore").innerHTML = `
     <p class="font-bold" style="font-size: 2vh;">
       <span class="tb-text">Tameable Beasts</span> is a Minecraft mod that adds 12 vanilla styled <span class="text-special">tameable
-       creatures</span> to your world which will <span class="text-orange">fight</span> for you, serve as 
+       creatures</span> to your world which will <span class="text-orange">fight</span> , serve as 
        <span class="text-orange">mounts</span> and much 
       <span class="text-orange">more</span>.  
     </p>
