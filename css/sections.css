@@ -59,6 +59,7 @@ body {
     text-align: center;
     padding: 1rem;
     list-style: none;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
 }
 
 .secondary-button:hover {
@@ -66,11 +67,14 @@ body {
 }
 
 .top-section {
-    padding: 1.5rem;             
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);  
-    display: flex;               
-    justify-content: space-between;
-    background-color: var(--color-secondary-selected);
+  position: relative;
+  z-index: 10;
+  padding: 1.5rem;
+  box-shadow: 0 10px 15px -3px rgba(23, 21, 21, 0.15),
+              0 4px 6px -4px rgba(60, 52, 52, 0.1);
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--color-secondary-selected);
 }
 
 .name-section {
@@ -81,7 +85,6 @@ body {
 }
 
 .project-button {
-    border-radius: .5rem;
     display: flex;
     flex-direction: row; 
     align-items: center; 
@@ -91,10 +94,8 @@ body {
 }
 
 .project-image-box {
-    background-color: var(--color-primary);
     width: 10vh;
     height: 10vh;
-    border-radius: .5rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -102,14 +103,14 @@ body {
 }
 
 .project-image {
-    width: 80%;
-    height: 80%;
+    width: 110%;
+    height: 110%;
     object-fit: contain;
     display: block;
 }
 
 .project-title {
-    text-align: center;
+    text-align: left;
     font-weight: bold;
     display: block;
     font-size: 3vh;
@@ -142,17 +143,9 @@ body {
 
 .lore-box {
     padding: 1.5rem;
-    border-radius: 0.5rem;
     background-color: var(--color-secondary);
     color: var(--color-text);
     margin: 0 auto;
-    width: 95%;
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
     margin-bottom: 1rem;
-}
-
-@media (min-width:1280px) {
-    .lore-box{
-        width: 75%;
-    }
 }

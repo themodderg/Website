@@ -8,7 +8,7 @@ const projects = [
   { title: "Model Portfolio", desc: "Compilation of my best 3D Blockbench assets.", link: "portfolio.html", 
     img: "./assets/images/p_logo.png", color:"p-text", w:3},
   
-  { title: "????", desc: "??????", link: "index.html", 
+  { title: "????", desc: "??????<br>??????", link: "index.html", 
     img: "./assets/images/unknown_logo.png", color:"td-text", w:3}
 ];
 
