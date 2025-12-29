@@ -37,7 +37,10 @@ const navbarHTML = `
 
 const footerHTML = `
 <footer class="text-center text-sm text-secondary-selected p-10 bg-secondary mt-auto">
-  © 2025 <a href="#" class="underline hover:text-white">CodderG</a>
+  © 2025 
+  <a href="#" class="underline hover:text-white">CodderG</a>
+  ·
+  <a href="/privacy-policy.html" class="underline hover:text-white">Privacy Policy</a>
 </footer>
 `;
 
