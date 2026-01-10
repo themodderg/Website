@@ -9,9 +9,15 @@ const projects = [
     img: "./assets/images/p_logo.png", color:"p-text", w:3},
   
   { title: "????", desc: "??????<br>??????", link: "index.html", 
-    img: "./assets/images/unknown_logo.png", color:"td-text", w:3}
+    img: "./assets/images/unknown_logo.png", color:"td-text", w:3},
+  
+  { title: "????", desc: "??????<br>??????", link: "index.html", 
+    img: "./assets/images/unknown_logo2.png", color:"td-text", w:3},
+  
+  { title: "????", desc: "??????<br>??????", link: "index.html", 
+    img: "./assets/images/unknown_logo3.png", color:"td-text", w:3}
 ];
-
+  
 
 document.getElementById("projects-container").innerHTML = projects.map(p => `
 <a href="${p.link}" class="secondary-button project-button">
