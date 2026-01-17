@@ -1,23 +1,23 @@
 const projects = [
-  { title: "Tameable Beasts", desc: "Mc mod that adds new tameable mobs to the world.", link: "tb_lore.html", 
+  { title: "Tameable Beasts", desc: "Mod that adds more tameable mobs.", link: "tb_lore.html", 
     img: "./assets/images/tb_logo.png", color:"tb-text"},
   
-  { title: "The Digimod", desc: "Mc mod that ports the digimon franchise to the world.", link: "td_lore.html", 
+  { title: "The Digimod", desc: "Mod that ports Digimon into Minecraft.", link: "td_lore.html", 
     img: "./assets/images/td_logo.png", color:"td-text"},
   
   { title: "Model Portfolio", desc: "Compilation of my best 3D Blockbench assets.", link: "portfolio.html", 
     img: "./assets/images/p_logo.png", color:"p-text"},
   
-  { title: "Companions!", desc: "Mc mod that adds creative tameable mobs and a boss fight.", link: "https://www.curseforge.com/minecraft/mc-mods/companions-mod", 
+  { title: "Companions!", desc: "Mod that adds tameable mobs and a boss.", link: "https://www.curseforge.com/minecraft/mc-mods/companions-mod", 
     img: "./assets/images/co_logo.png", color:"co-text"},
   
-  { title: "Digimod [Cobblemon]", desc: "Mc addon that brings Digimon into the Cobblemon mod.", link: "txc_lore.html", 
+  { title: "Digimod [Cobblemon]", desc: "Addon that brings Digimod into Cobblemon.", link: "txc_lore.html", 
     img: "./assets/images/txc_logo.png", color:"txc-text"},
   
   { title: "P.E.K.K.A. Craft", desc: "Mc mod that adds tameable P.E.K.K.A.s", link: "https://www.curseforge.com/minecraft/mc-mods/pk-craft", 
     img: "./assets/images/pk_logo.png", color:"pk-text"},
   
-  { title: "Animights", desc: "Mc mod that adds anthropomorphic loyal squires.", link: "https://www.curseforge.com/minecraft/mc-mods/animights", 
+  { title: "Animights", desc: "Mod that adds tameable loyal squires.", link: "https://www.curseforge.com/minecraft/mc-mods/animights", 
     img: "./assets/images/am_logo.png", color:"am-text"},
   
   { title: "????", desc: "??????<br>??????", link: "index.html", 
