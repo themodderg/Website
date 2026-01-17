@@ -8,6 +8,10 @@
   --color-tb: #67ae52;
   --color-td: #2ef0dc;
   --color-p: #be694f;
+  --color-co: #a471dc;
+  --color-pk: #7485ae;
+  --color-am: #bdb093;
+  --color-txc: #d6a700;
 }
 
 body {
@@ -27,6 +31,10 @@ body {
 .tb-text{color: var(--color-tb);}
 .td-text{color: var(--color-td);}
 .p-text{color: var(--color-p);}
+.co-text{color: var(--color-co);}
+.pk-text{color: var(--color-pk);}
+.am-text{color: var(--color-am);}
+.txc-text{color: var(--color-txc);}
 
 .bg-primary {background-color: var(--color-primary);}
 .bg-secondary {background-color: var(--color-secondary);}
@@ -120,6 +128,7 @@ body {
     text-align: left;
     margin-top: 0.5rem;
     font-size: 2vh;
+    color: gray;
 }
 
 .mob-pic {
@@ -164,4 +173,24 @@ body {
 
 .ad-inner {
   padding: 1rem;
+}
+
+.sheet-shell{
+  margin-top: 10px;
+  height: clamp(40vh, 60vh, 85vh);
+}
+
+
+.sheet-embed{
+  height: 100%;
+  overflow: hidden;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.12);
+}
+
+.sheet-embed iframe{
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
 }
