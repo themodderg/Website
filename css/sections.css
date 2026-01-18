@@ -161,8 +161,8 @@ body {
 }
 
 .ad-sidebar {
-  width: 15vw;
-  min-height: 60vh;
+  width: 300px;
+  min-height: 300px;
   flex: none;
 }
 
