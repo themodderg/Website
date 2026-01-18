@@ -160,10 +160,10 @@ body {
     margin-bottom: 1rem;
 }
 
-.ad-sidebar {
-  width: 300px;
-  min-height: 300px;
-  flex: none;
+.ad-sidebar { 
+  flex: 0 0 300px; 
+  width: 300px; 
+  overflow: hidden;  /* key */
 }
 
 .ad-sticky {
@@ -172,7 +172,6 @@ body {
 }
 
 .ad-inner {
-  padding: 1rem;
 }
 
 .sheet-shell{
