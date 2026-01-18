@@ -163,17 +163,20 @@ body {
 .ad-sidebar { 
   flex: 0 0 300px;
   width: 300px;
+  
 }
 
 .ad-sticky {
   position: sticky;
   top: 16px;
   align-self: flex-start;
+  
 }
 
 .ad-inner {
   overflow: hidden;
 }
+
 
 .sheet-shell{
   margin-top: 10px;
