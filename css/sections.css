@@ -141,6 +141,16 @@ body {
 }
 
 .hero {
+  background-color: var(--color-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 16vh;
+  padding: 1.2vh 2vh;
+  box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -4px rgba(0,0,0,0.1);
+}
+
+.hero-text {
     background-color: var(--color-secondary);
     display: flex;
     flex-direction: column;
@@ -150,6 +160,34 @@ body {
     height: 15vh;  
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
 }
+
+
+.hero-row{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2vh;
+}
+
+.hero-logo{
+  height: 10vh;     /* controls logo size relative to header height */
+  width: auto;
+  display: block;
+}
+
+.hero-badges{
+  display: flex;
+  flex-direction: column;   /* stack */
+  gap: 1vh;
+  align-items: center;
+}
+
+.hero-badges img{
+  height: 3.2vh;   /* keeps the shields proportional */
+  width: auto;
+  display: block;
+}
+
 
 .lore-box {
     padding: 1.5rem;
@@ -170,7 +208,7 @@ body {
   position: sticky;
   top: 16px;
   align-self: flex-start;
-  
+
 }
 
 .ad-inner {

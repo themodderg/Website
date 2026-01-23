@@ -22,7 +22,10 @@ const pics = [
   {img: "scarecrow.png"},
   {img: "graptera.png"},
   {img: "argentavis.png"},
-  {img: "minipk.png"}
+  {img: "minipk.png"},
+  {img: "cactus_golem.png"},
+  {img: "gold_golem.png"},
+  {img: "castle_golem.png"}
 ];
 
 function renderPics() {
