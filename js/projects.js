@@ -14,7 +14,7 @@ const projects = [
   { title: "Digimod [Cobblemon]", desc: "Addon that brings Digimod into Cobblemon.", link: "txc_lore.html", 
     img: "./assets/images/txc_logo.png", color:"txc-text"},
   
-  { title: "P.E.K.K.A. Craft", desc: "Mc mod that adds tameable P.E.K.K.A.s", link: "https://www.curseforge.com/minecraft/mc-mods/pk-craft", 
+  { title: "P.E.K.K.A. Craft", desc: "Mc mod that adds tameable P.E.K.K.A.s", link: "pk_lore.html", 
     img: "./assets/images/pk_logo.png", color:"pk-text"},
   
   { title: "Animights", desc: "Mod that adds tameable loyal squires.", link: "https://www.curseforge.com/minecraft/mc-mods/animights", 
