@@ -20,11 +20,11 @@ const projects = [
   { title: "Animights", desc: "Mod that adds tameable loyal squires.", link: "https://www.curseforge.com/minecraft/mc-mods/animights", 
     img: "./assets/images/am_logo.png", color:"am-text"},
   
-  { title: "????", desc: "??????<br>??????", link: "index.html", 
-    img: "./assets/images/unknown_logo.png", color:"td-text"},
+  { title: "More Golems", desc: "Mod that adds more vanilla styled golems.", link: "mgolems_lore.html", 
+    img: "./assets/images/more_golems.png", color:"mg-text"},
   
   { title: "????", desc: "??????<br>??????", link: "index.html", 
-    img: "./assets/images/unknown_logo3.png", color:"td-text"}
+    img: "./assets/images/unknown_logo.png", color:"td-text"}
 ];
   
 

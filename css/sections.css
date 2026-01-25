@@ -12,6 +12,7 @@
   --color-pk: #7485ae;
   --color-am: #bdb093;
   --color-txc: #d6a700;
+  --color-mg: #9c8c81;
 }
 
 body {
@@ -35,6 +36,7 @@ body {
 .pk-text{color: var(--color-pk);}
 .am-text{color: var(--color-am);}
 .txc-text{color: var(--color-txc);}
+.mg-text{color: var(--color-mg);}
 
 .bg-primary {background-color: var(--color-primary);}
 .bg-secondary {background-color: var(--color-secondary);}
