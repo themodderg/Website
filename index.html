@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Codderg</title>
 
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2592338544514821"
-     crossorigin="anonymous"></script>
+    crossorigin="anonymous"></script>
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -14,90 +15,22 @@
   <link rel="stylesheet" href="./css/sections.css">
   <link rel="icon" type="image/png" href="assets/images/logo.png">
 </head>
+
 <body>
 
 
-<!-- Hero -->
-<section class="hero-text">
-  <h2 class="font-bold">Hi, I'm <span class="text-special">CodderG</span></h2>
-  <p class="mt-4" style="font-size: 2vh;">I make Mc <span class="text-orange">assets</span> and <span class="text-orange">mods</span>.</p>
-</section>
-
-<!-- HORIZONTAL AD -->
-  <div class=" xl:hidden block" style="height: 10vw;">
-    <div class="p-4">
-      <ins class="adsbygoogle"  
-           style="display:block"
-           data-ad-client="ca-pub-2592338544514821"
-           data-ad-slot="1515942434"
-           data-ad-format="auto"
-           data-full-width-responsive="true"></ins> 
-
-      <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-      </script>
-    </div>
-  </div>
-
-<div class="flex justify-center" style="width: 100%;">
-
-  <!-- VERTICAL AD -->
-  <div class="hidden xl:block ad-sidebar">
-    <div class="ad-sticky">
-      <div class="ad-inner">
-        <ins class="adsbygoogle"
-          style="display:block; width:100%; min-width:300px;"
-          data-ad-client="ca-pub-2592338544514821"
-          data-ad-slot="3061012292"
-          data-ad-format="auto"
-          data-full-width-responsive="true"></ins>
-          
-        <script>
-          (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
-      </div>
-    </div>
-  </div>
-
-
-  <!-- Projects --> 
-  <section id="projects" class="mb-10 ml-2 mr-2"> 
-      <h2 class="font-semibold xl:mt-10" style="font-size: 3vh;">Relevant Projects:</h2> 
-      <hr class="my-5 border-t-2 border-secondary-selected"> 
-      <div id="projects-container" class="grid grid-cols-1 xl:grid-cols-3 gap-3"></div> 
+  <!-- Hero -->
+  <section class="hero-text">
+    <h2 class="font-bold">Hi, I'm <span class="text-special">CodderG</span></h2>
+    <p class="mt-4" style="font-size: 2vh;">I make Mc <span class="text-orange">assets</span> and <span
+        class="text-orange">mods</span>.</p>
   </section>
 
-  <!-- VERTICAL AD -->
-  <div class="hidden xl:block ad-sidebar">
-    <div class="ad-sticky">
-      <div class="ad-inner">
-        <ins class="adsbygoogle"
-          style="display:block; width:100%; min-width:300px;"
-          data-ad-client="ca-pub-2592338544514821"
-          data-ad-slot="3061012292"
-          data-ad-format="auto"
-          data-full-width-responsive="true"></ins> 
-          
-        <script>
-          (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
-      </div>
-    </div>
-  </div>
-
-
-
-</div>
-
-<!-- HORIZONTAL AD -->
+  <!-- HORIZONTAL AD -->
   <div class=" xl:hidden block" style="height: 10vw;">
     <div class="p-4">
-      <ins class="adsbygoogle"  
-           style="display:block"
-           data-ad-client="ca-pub-2592338544514821"
-           data-ad-slot="1515942434"
-           data-ad-format="auto"
-           data-full-width-responsive="true"></ins> 
+      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2592338544514821" data-ad-slot="1515942434"
+        data-ad-format="auto" data-full-width-responsive="true"></ins>
 
       <script>
         (adsbygoogle = window.adsbygoogle || []).push({});
@@ -105,7 +38,93 @@
     </div>
   </div>
 
-<script src="./js/projects.js"></script>
-<script src="./js/common.js"></script>
+  <div class="flex justify-center" style="width: 100%;">
+
+    <!-- VERTICAL AD -->
+    <div class="hidden xl:block ad-sidebar">
+      <div class="ad-sticky">
+        <div class="ad-inner">
+          <ins class="adsbygoogle" style="display:block; width:100%; min-width:300px;"
+            data-ad-client="ca-pub-2592338544514821" data-ad-slot="3061012292" data-ad-format="auto"
+            data-full-width-responsive="true"></ins>
+
+          <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Projects -->
+    <section id="projects" class="mb-10 ml-2 mr-2">
+      <div class="flex justify-between items-center xl:mt-10">
+        <h2 class="font-semibold" style="font-size: 3vh;">Relevant Projects:</h2>
+        <i id="filter-btn" class="fa-solid fa-filter cursor-pointer hover:text-gray-400 transition-colors"
+          style="font-size: 3vh;"></i>
+      </div>
+      <hr class="my-5 border-t-2 border-secondary-selected">
+      <div id="projects-container" class="grid grid-cols-1 xl:grid-cols-3 gap-3"></div>
+    </section>
+
+    <!-- VERTICAL AD -->
+    <div class="hidden xl:block ad-sidebar">
+      <div class="ad-sticky">
+        <div class="ad-inner">
+          <ins class="adsbygoogle" style="display:block; width:100%; min-width:300px;"
+            data-ad-client="ca-pub-2592338544514821" data-ad-slot="3061012292" data-ad-format="auto"
+            data-full-width-responsive="true"></ins>
+
+          <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>
+
+  <div id="filter-overlay" class="fixed inset-0 bg-black bg-opacity-50 z-40 hidden transition-opacity opacity-0"></div>
+
+  <div id="filter-panel"
+    class="fixed top-0 right-0 h-full w-80 bg-secondary shadow-lg z-50 transform translate-x-full transition-transform duration-300 ease-in-out">
+    <div class="p-6 h-full flex flex-col">
+      <div class="flex justify-between items-center mb-6">
+        <h3 class="font-bold" style="font-size: 3vh;">Filter by Tags</h3>
+        <button id="close-filter-btn" class="text-color hover:text-orange transition-colors">
+          <i class="fa-solid fa-times" style="font-size: 3vh;"></i>
+        </button>
+      </div>
+
+      <div id="filter-tags-container" class="flex flex-wrap gap-2 overflow-y-auto">
+        <!-- Tags will be injected here by JS -->
+      </div>
+
+      <div class="mt-auto pt-4 border-t border-secondary-selected">
+        <button id="clear-filters-btn" class="w-full secondary-button rounded transition-colors"
+          style="padding: 1.5vh; font-size: 2.5vh; background-color: var(--color-orange); color: white;">
+          Clear Filters
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- HORIZONTAL AD -->
+  <div class=" xl:hidden block" style="height: 10vw;">
+    <div class="p-4">
+      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2592338544514821" data-ad-slot="1515942434"
+        data-ad-format="auto" data-full-width-responsive="true"></ins>
+
+      <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+  </div>
+
+  <script src="./js/projects.js"></script>
+  <script src="./js/common.js"></script>
 </body>
+
 </html>
