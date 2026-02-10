@@ -237,6 +237,30 @@ body {
   font-size: 3vh;
   height: 15vh;
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-runner {
+  position: absolute;
+  bottom: 0;
+  height: 12vh;
+  width: auto;
+  pointer-events: none;
+  z-index: 5;
+  animation: runAcross 20s linear forwards;
+}
+
+@keyframes runAcross {
+  0% {
+    left: -10%;
+    transform: scaleX(1);
+  }
+
+  100% {
+    left: 110%;
+    transform: scaleX(1);
+  }
 }
 
 
