@@ -54,8 +54,7 @@ const projects = [
   }
 ];
 
-// State
-let selectedTags = new Set();
+
 const projectsContainer = document.getElementById("projects-container");
 const filterBtn = document.getElementById("filter-btn");
 const closeFilterBtn = document.getElementById("close-filter-btn");
@@ -64,7 +63,6 @@ const filterPanel = document.getElementById("filter-panel");
 const filterOverlay = document.getElementById("filter-overlay");
 const filterTagsContainer = document.getElementById("filter-tags-container");
 
-// Render Projects
 function renderProjects(projectsToRender) {
   projectsContainer.innerHTML = projectsToRender.map(p => `
     <a href="${p.link}" class="secondary-button project-button">
@@ -88,14 +86,12 @@ function renderProjects(projectsToRender) {
   `).join('');
 }
 
-// Get Unique Tags
 function getUniqueTags() {
   const tags = new Set();
   projects.forEach(p => p.tags.forEach(tag => tags.add(tag)));
   return Array.from(tags).sort();
 }
 
-// Render Filter Tags
 function renderFilterTags() {
   const tags = getUniqueTags();
   filterTagsContainer.innerHTML = tags.map(tag => `
@@ -104,7 +100,6 @@ function renderFilterTags() {
     </div>
   `).join('');
 
-  // Add event listeners to tags
   document.querySelectorAll('.filter-tag').forEach(tagElem => {
     tagElem.addEventListener('click', () => {
       const tag = tagElem.dataset.tag;
@@ -113,7 +108,6 @@ function renderFilterTags() {
   });
 }
 
-// Toggle Tag Selection
 function toggleTag(tag) {
   if (selectedTags.has(tag)) {
     selectedTags.delete(tag);
@@ -121,11 +115,10 @@ function toggleTag(tag) {
     selectedTags.add(tag);
   }
 
-  renderFilterTags(); // Re-render to update active state
+  renderFilterTags();
   filterProjects();
 }
 
-// Filter Projects
 function filterProjects() {
   if (selectedTags.size === 0) {
     renderProjects(projects);
@@ -137,15 +130,13 @@ function filterProjects() {
   }
 }
 
-// Filter Panel UI
 function openFilter() {
   filterPanel.classList.remove('translate-x-full');
   filterOverlay.classList.remove('hidden');
-  // Small delay to allow display:block to apply before opacity transition
   setTimeout(() => {
     filterOverlay.classList.remove('opacity-0');
   }, 10);
-  document.body.style.overflow = 'hidden'; // Prevent background scrolling
+  document.body.style.overflow = 'hidden';
 }
 
 function closeFilter() {
@@ -153,7 +144,7 @@ function closeFilter() {
   filterOverlay.classList.add('opacity-0');
   setTimeout(() => {
     filterOverlay.classList.add('hidden');
-  }, 300); // Wait for transition
+  }, 300);
   document.body.style.overflow = '';
 }
 
@@ -163,12 +154,10 @@ function clearFilters() {
   filterProjects();
 }
 
-// Event Listeners
 filterBtn.addEventListener('click', openFilter);
 closeFilterBtn.addEventListener('click', closeFilter);
 filterOverlay.addEventListener('click', closeFilter);
 clearFiltersBtn.addEventListener('click', clearFilters);
 
-// Initial Render
 renderProjects(projects);
 renderFilterTags();

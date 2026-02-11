@@ -8,6 +8,7 @@ const runners = [
 ];
 
 function spawnRunner() {
+    if (document.hidden) return;
     const container = document.querySelector('.hero-text');
     if (!container) return;
 
