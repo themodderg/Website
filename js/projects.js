@@ -54,7 +54,7 @@ const projects = [
   }
 ];
 
-
+const selectedTags = new Set();
 const projectsContainer = document.getElementById("projects-container");
 const filterBtn = document.getElementById("filter-btn");
 const closeFilterBtn = document.getElementById("close-filter-btn");

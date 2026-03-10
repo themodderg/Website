@@ -21,6 +21,10 @@ const navbarHTML = `
       <i class="fa-brands fa-youtube" style="font-size: 3vh;"></i>
     </a>
 
+    <a href="https://www.instagram.com/themodderg/" target="_blank" class="hover:text-pink-400">
+      <i class="fa-brands fa-instagram" style="font-size: 3vh;"></i>
+    </a>
+
     <a href="https://www.fiverr.com/s/m5r7qZV" target="_blank">
       <img src="./assets/images/fiverr_logo.png" 
         alt="Fiverr" 
