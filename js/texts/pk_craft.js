@@ -1,7 +1,7 @@
 document.getElementById("pk-lore").innerHTML = `
     <p class="font-bold" style="font-size: 2vh;">
       <span class="td-text">P.E.K.K.A. Craft</span> Minecraft mod that adds 
-      <span class="text-special">Mini P.E.K.K.A</span> from Clash Royale as a mob into to the world, along related equipment and pancakes.
+      <span class="text-special">Mini P.E.K.K.A</span> from Clash Royale as a mob into to the world, along related equipment and pancakes. The <span class="text-special">Crystals</span> are crafted with <span class="text-special">Crystal Pieces</span> that are found around the world on dungeons.
     </p>
   `;
 
@@ -42,7 +42,7 @@ document.getElementById("easter-lore").innerHTML = `
 
 document.getElementById("hero-lore").innerHTML = `
     <p class="font-bold" style="font-size: 2vh;">
-        <span class="text-special">Mini P.E.K.K.A.s</span> can be turned in their <span class="text-special">Star Level</span> version after defeating 50 foes and the transformation gets triggered by crafting a <span class="text-special">Star</span> and using it on the <span class="text-special">Mini P.E.K.K.A.</span> A <span class="text-special">Star Level P.E.K.K.A.</span> can be turned into the <span class="text-special">Hero P.E.K.K.A.</span> by crafting and using an <span class="text-special">Hero Crystal</span> over it.
+        <span class="text-special">Mini P.E.K.K.A.s</span> can be turned in their <span class="text-special">Star Level</span> version after defeating 50 foes and the transformation gets triggered by crafting a <span class="text-special">Star</span> and using it on the <span class="text-special">Mini P.E.K.K.A.</span> A <span class="text-special">Star Level P.E.K.K.A.</span> can be turned into the <span class="text-special">Hero P.E.K.K.A.</span> by crafting and using an <span class="text-special">Hero Crystal</span> over it. The <span class="text-special">Hero Crystals</span> are crafted with <span class="text-special">Hero Shards</span> that are found around the world on dungeons.
     </p>
     <br>
     <p class="font-bold" style="font-size: 2vh;">
@@ -52,7 +52,7 @@ document.getElementById("hero-lore").innerHTML = `
 
 document.getElementById("evo-lore").innerHTML = `
     <p class="font-bold" style="font-size: 2vh;">
-        <span class="text-special">P.E.K.K.A.s</span> can be turned in their <span class="text-special">Star Level</span> version after defeating 50 foes and the transformation gets triggered by crafting a <span class="text-special">Star</span> and using it on the <span class="text-special">P.E.K.K.A.</span> A <span class="text-special">Star Level P.E.K.K.A.</span> can be turned into the <span class="text-special">Evolved P.E.K.K.A.</span> by crafting and using an <span class="text-special">Evo Crystal</span> over it.
+        <span class="text-special">P.E.K.K.A.s</span> can be turned in their <span class="text-special">Star Level</span> version after defeating 50 foes and the transformation gets triggered by crafting a <span class="text-special">Star</span> and using it on the <span class="text-special">P.E.K.K.A.</span> A <span class="text-special">Star Level P.E.K.K.A.</span> can be turned into the <span class="text-special">Evolved P.E.K.K.A.</span> by crafting and using an <span class="text-special">Evo Crystal</span> over it. The <span class="text-special">Evo Crystals</span> are crafted with <span class="text-special">Evo Shards</span> that are found around the world on dungeons.
     </p>
     <br>
     <p class="font-bold" style="font-size: 2vh;">
