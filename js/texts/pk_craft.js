@@ -42,7 +42,7 @@ document.getElementById("easter-lore").innerHTML = `
 
 document.getElementById("hero-lore").innerHTML = `
     <p class="font-bold" style="font-size: 2vh;">
-        <span class="text-special">Mini P.E.K.K.A.s</span> can be turned in their <span class="text-special">Star Level</span> version after defeating 50 foes and the transformation gets triggered by crafting a <span class="text-special">Star</span> and using it on the <span class="text-special">Mini P.E.K.K.A.</span> A <span class="text-special">Star Level P.E.K.K.A.</span> can be turned into the <span class="text-special">Hero P.E.K.K.A.</span> by crafting and using an <span class="text-special">Hero Crystal</span> over it. The <span class="text-special">Hero Crystals</span> are crafted with <span class="text-special">Hero Shards</span> that are found around the world on dungeons.
+        <span class="text-special">Mini P.E.K.K.A.s</span> can be turned in their <span class="text-special">Star Level</span> version after defeating 50 foes and the transformation gets triggered by crafting a <span class="text-special">Star</span> and using it on the <span class="text-special">Mini P.E.K.K.A.</span> A <span class="text-special">Star Level P.E.K.K.A.</span> can be turned into the <span class="text-special">Hero P.E.K.K.A.</span> by crafting and using an <span class="text-special">Hero Crystal</span> over it. The <span class="text-special">Hero Crystals</span> are crafted with <span class="text-special">Hero Shards</span> that are received via <span class="text-special">HeroBoxes</span> which are found around the world on dungeons.
     </p>
     <br>
     <p class="font-bold" style="font-size: 2vh;">
