@@ -3,37 +3,37 @@ const navbarHTML = `
 
   <a href="index.html">
       <img src="./assets/images/logo.png" 
-        alt="Fiverr" 
-        style="height: 5vh; width: auto;" 
+        alt="CodderG" 
+        style="height: 42px; width: auto;" 
         class="object-contain hover:opacity-80">
   </a>
 
-  <div class="flex space-x-4 items-center">
-    <a href="https://x.com/themodderG" target="_blank" class="hover:text-blue-400">
-      <i class="fa-brands fa-twitter" style="font-size: 3vh;"></i>
+  <div class="flex space-x-4 items-center text-xl">
+    <a href="https://x.com/themodderG" target="_blank" rel="noopener noreferrer" class="social-link hover:text-blue-400" aria-label="Twitter">
+      <i class="fa-brands fa-twitter"></i>
     </a>
 
-    <a href="https://github.com/ginerJ" target="_blank" class="hover:text-purple-400">
-      <i class="fa-brands fa-github" style="font-size: 3vh;"></i>
+    <a href="https://github.com/ginerJ" target="_blank" rel="noopener noreferrer" class="social-link hover:text-purple-400" aria-label="GitHub">
+      <i class="fa-brands fa-github"></i>
     </a>
 
-    <a href="https://www.youtube.com/@TheModderG" target="_blank" class="hover:text-red-400">
-      <i class="fa-brands fa-youtube" style="font-size: 3vh;"></i>
+    <a href="https://www.youtube.com/@TheModderG" target="_blank" rel="noopener noreferrer" class="social-link hover:text-red-400" aria-label="YouTube">
+      <i class="fa-brands fa-youtube"></i>
     </a>
 
-    <a href="https://www.instagram.com/themodderg/" target="_blank" class="hover:text-pink-400">
-      <i class="fa-brands fa-instagram" style="font-size: 3vh;"></i>
+    <a href="https://www.instagram.com/themodderg/" target="_blank" rel="noopener noreferrer" class="social-link hover:text-pink-400" aria-label="Instagram">
+      <i class="fa-brands fa-instagram"></i>
     </a>
 
-    <a href="https://www.fiverr.com/s/m5r7qZV" target="_blank">
+    <a href="https://www.fiverr.com/s/m5r7qZV" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Fiverr">
       <img src="./assets/images/fiverr_logo.png" 
         alt="Fiverr" 
-        style="height: 3vh; width: auto;" 
+        style="height: 1.25rem; width: auto;" 
         class="object-contain hover:opacity-80">
     </a>
 
-    <a href="https://discord.gg/EeNkjGZY37" target="_blank" class="hover:text-indigo-500">
-      <i class="fa-brands fa-discord" style="font-size: 3vh;"></i>
+    <a href="https://discord.gg/EeNkjGZY37" target="_blank" rel="noopener noreferrer" class="social-link hover:text-indigo-500" aria-label="Discord">
+      <i class="fa-brands fa-discord"></i>
     </a>
   </div>
 </nav>
@@ -41,10 +41,10 @@ const navbarHTML = `
 
 const footerHTML = `
 <footer class="text-center text-sm text-secondary-selected p-10 bg-secondary mt-auto">
-  © 2025 
-  <a href="#" class="underline hover:text-white">CodderG</a>
+  © 2026 
+  <a href="index.html" class="underline hover:text-white">CodderG</a>
   ·
-  <a href="/privacy-policy.html" class="underline hover:text-white">Privacy Policy</a>
+  <a href="privacy-policy.html" class="underline hover:text-white">Privacy Policy</a>
 </footer>
 `;
 
