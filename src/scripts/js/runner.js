@@ -15,7 +15,7 @@ function spawnRunner() {
     const randomRunner = runners[Math.floor(Math.random() * runners.length)];
 
     const img = document.createElement('img');
-    img.src = `assets/images/runners/${randomRunner}`;
+    img.src = `src/assets/images/runners/${randomRunner}`;
     img.classList.add('hero-runner');
     img.alt = 'Runner Animation';
 

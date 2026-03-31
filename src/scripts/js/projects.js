@@ -1,55 +1,55 @@
 const projects = [
   {
     title: "Tameable Beasts", desc: "Mod that adds more tameable mobs.", link: "tb_lore.html",
-    img: "./assets/images/tb_logo.png", color: "tb-text",
+    img: "./src/assets/images/tb_logo.png", color: "tb-text",
     tags: ["Forge", "NeoForge", "1.20"]
   },
 
   {
     title: "The Digimod", desc: "Mod that ports Digimon into Minecraft.", link: "td_lore.html",
-    img: "./assets/images/td_logo.png", color: "td-text",
+    img: "./src/assets/images/td_logo.png", color: "td-text",
     tags: ["Forge", "NeoForge", "1.20"]
   },
 
   {
     title: "Model Portfolio", desc: "Compilation of my best 3D Blockbench assets.", link: "portfolio.html",
-    img: "./assets/images/p_logo.png", color: "p-text",
+    img: "./src/assets/images/p_logo.png", color: "p-text",
     tags: ["Art Collection"]
   },
 
   {
     title: "Companions!", desc: "Mod that adds tameable mobs and a boss.", link: "https://www.curseforge.com/minecraft/mc-mods/companions-mod",
-    img: "./assets/images/co_logo.png", color: "co-text",
+    img: "./src/assets/images/co_logo.png", color: "co-text",
     tags: ["Forge", "NeoForge", "Fabric", "1.20", "1.21", "MOTY"]
   },
 
   {
     title: "Digimod [Cobblemon]", desc: "Addon that brings Digimod into Cobblemon.", link: "txc_lore.html",
-    img: "./assets/images/txc_logo.png", color: "txc-text",
+    img: "./src/assets/images/txc_logo.png", color: "txc-text",
     tags: ["Forge", "NeoForge", "1.20"]
   },
 
   {
     title: "P.E.K.K.A. Craft", desc: "Mc mod that adds tameable P.E.K.K.A.s", link: "pk_lore.html",
-    img: "./assets/images/pk_logo.png", color: "pk-text",
+    img: "./src/assets/images/pk_logo.png", color: "pk-text",
     tags: ["Forge", "NeoForge", "Bedrock", "1.20"]
   },
 
   {
     title: "Animights", desc: "Mod that adds tameable loyal squires.", link: "animights_lore.html",
-    img: "./assets/images/am_logo.png", color: "am-text",
+    img: "./src/assets/images/am_logo.png", color: "am-text",
     tags: ["Forge", "NeoForge", "1.20"]
   },
 
   {
     title: "More Golems", desc: "Mod that adds more vanilla styled golems.", link: "mgolems_lore.html",
-    img: "./assets/images/more_golems.png", color: "mg-text",
+    img: "./src/assets/images/more_golems.png", color: "mg-text",
     tags: ["Forge", "NeoForge", "1.20"]
   },
 
   {
     title: "????", desc: "??????<br>??????", link: "index.html",
-    img: "./assets/images/unknown_logo.png", color: "td-text",
+    img: "./src/assets/images/unknown_logo.png", color: "td-text",
     tags: ["Forge", "NeoForge", "1.20"]
   }
 ];

@@ -203,7 +203,6 @@ a {
   flex-direction: column;
   align-items: flex-start;
   gap: 0.55rem;
-  min-height: 154px;
   text-decoration: none;
 }
 
@@ -232,6 +231,14 @@ a {
   height: 92%;
   object-fit: contain;
   display: block;
+  transition: transform 0.2s ease;
+  transform-origin: center;
+}
+
+.project-button:hover .project-image,
+.project-button:focus-visible .project-image,
+.project-button:active .project-image {
+  transform: scale(1.07);
 }
 
 .project-title {
@@ -387,6 +394,13 @@ a {
   width: min(1200px, calc(100% - 1.5rem));
   margin-left: auto;
   margin-right: auto;
+  align-self: flex-start;
+}
+
+#pics-container {
+  width: min(1200px, calc(100% - 1.5rem));
+  margin-left: auto;
+  margin-right: auto;
 }
 
 details {
@@ -411,22 +425,49 @@ details[open] > summary::after {
   content: "−";
 }
 
+
 .ad-sidebar {
   flex: 0 0 300px;
   width: 300px;
-
+  min-height: 0;
+  height: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .ad-sticky {
   position: sticky;
-  top: 6rem;
+  top: 0;
   align-self: flex-start;
-
+  width: 100%;
+  height: 100vh;
+  min-height: 100vh;
+  z-index: 60;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .ad-inner {
   padding: 0.5rem;
   overflow: hidden;
+  height: 100%;
+  display: flex;
+}
+
+.ad-inner .adsbygoogle {
+  width: 100%;
+  height: 100% !important;
+}
+
+.adsbygoogle[data-ad-status="unfilled"],
+.adsbygoogle:empty {
+  background-color: #ffffff !important;
+}
+
+.mobile-ad-slot {
+  height: auto;
 }
 
 
@@ -484,6 +525,36 @@ footer {
   border-radius: 0.95rem;
 }
 
+@media (min-width: 1280px) {
+  :root {
+    --content-width: min(1200px, calc(100% - 620px));
+  }
+
+  .ad-sidebar:first-child {
+    margin-right: 0.5rem;
+  }
+
+  .ad-sidebar:last-child {
+    margin-left: 0.5rem;
+  }
+
+  .top-section,
+  .hero,
+  .hero-text,
+  #projects,
+  footer,
+  .xl\:w-\[70vw\] {
+    width: var(--content-width) !important;
+    max-width: var(--content-width);
+  }
+
+  #projects,
+  .xl\:w-\[70vw\] {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+}
+
 @media (max-width: 1280px) {
   .top-section,
   .hero,
@@ -497,5 +568,15 @@ footer {
     margin: 0.55rem auto;
     padding: 0.75rem 0.9rem;
     border-radius: 0.8rem;
+  }
+}
+
+@media (orientation: portrait) {
+  .ad-sidebar {
+    display: none !important;
+    justify-content: flex-start !important;
+  }
+  .ad-sticky {
+    justify-content: flex-start !important;
   }
 }

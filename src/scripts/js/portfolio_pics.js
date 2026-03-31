@@ -30,14 +30,16 @@ const pics = [
 ];
 
 function renderPics() {
+    const container = document.getElementById("pics-container");
     const cols = window.innerWidth < window.innerHeight ? 2 : 4;
     const gap = 11;
-    const size = Math.floor((window.innerWidth - (cols - 1) * gap) / cols);
+    const containerWidth = Math.max(container.clientWidth, 320);
+    const size = Math.floor((containerWidth - (cols - 1) * gap) / cols);
 
-    document.getElementById("pics-container").innerHTML = pics.map(p => `
+    container.innerHTML = pics.map(p => `
     <div class="inline-block rounded w-fit">
         <div class="flex items-center">
-            <img src="./assets/images/portfolio/${p.img}" style="width:${size}px; height:${size}px;">
+            <img src="./src/assets/images/portfolio/${p.img}" style="width:${size}px; height:${size}px;">
         </div>
     </div>
     `).join('');

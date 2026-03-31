@@ -2,7 +2,7 @@ const navbarHTML = `
 <nav class="top-section" >
 
   <a href="index.html">
-      <img src="./assets/images/logo.png" 
+      <img src="./src/assets/images/logo.png" 
         alt="CodderG" 
         style="height: 42px; width: auto;" 
         class="object-contain hover:opacity-80">
@@ -26,7 +26,7 @@ const navbarHTML = `
     </a>
 
     <a href="https://www.fiverr.com/s/m5r7qZV" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Fiverr">
-      <img src="./assets/images/fiverr_logo.png" 
+      <img src="./src/assets/images/fiverr_logo.png" 
         alt="Fiverr" 
         style="height: 1.25rem; width: auto;" 
         class="object-contain hover:opacity-80">
@@ -40,7 +40,7 @@ const navbarHTML = `
 `;
 
 const footerHTML = `
-<footer class="text-center text-sm text-secondary-selected p-10 bg-secondary mt-auto">
+<footer class="text-center text-sm text-secondary-selected p-10 bg-secondary">
   © 2026 
   <a href="index.html" class="underline hover:text-white">CodderG</a>
   ·
@@ -50,3 +50,56 @@ const footerHTML = `
 
 document.body.insertAdjacentHTML("beforeend", footerHTML);
 document.body.insertAdjacentHTML("afterbegin", navbarHTML);
+
+function syncMobileAdSlots() {
+  const slots = document.querySelectorAll(".mobile-ad-slot");
+  slots.forEach((slot) => {
+    const ad = slot.querySelector(".adsbygoogle");
+    if (!ad) {
+      return;
+    }
+
+    const status = ad.getAttribute("data-ad-status");
+    const isEmpty = ad.innerHTML.trim() === "" && ad.clientHeight === 0;
+    slot.style.display = status === "unfilled" || isEmpty ? "none" : "";
+  });
+}
+
+function syncDesktopAdRails() {
+  const desktopLandscape = window.matchMedia("(min-width: 1280px) and (orientation: landscape)").matches;
+  const sidebars = document.querySelectorAll(".ad-sidebar");
+
+  sidebars.forEach((sidebar) => {
+    const sticky = sidebar.querySelector(".ad-sticky");
+    if (!sticky) {
+      return;
+    }
+
+    if (!desktopLandscape) {
+      sidebar.style.display = "none";
+      sticky.style.position = "sticky";
+      sticky.style.top = "0";
+      sticky.style.left = "";
+      sticky.style.width = "100%";
+      sticky.style.height = "100vh";
+      return;
+    }
+
+    sidebar.style.display = "flex";
+
+    const rect = sidebar.getBoundingClientRect();
+    sticky.style.position = "fixed";
+    sticky.style.top = "0";
+    sticky.style.left = `${Math.round(rect.left)}px`;
+    sticky.style.width = `${Math.round(rect.width)}px`;
+    sticky.style.height = "100vh";
+  });
+}
+
+syncDesktopAdRails();
+window.addEventListener("resize", syncDesktopAdRails);
+
+syncMobileAdSlots();
+window.addEventListener("load", syncMobileAdSlots);
+setTimeout(syncMobileAdSlots, 1000);
+setTimeout(syncMobileAdSlots, 2500);
