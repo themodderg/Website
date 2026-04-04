@@ -215,8 +215,8 @@ a {
 }
 
 .project-image-box {
-  width: 84px;
-  height: 84px;
+  width: clamp(96px, 8vw, 120px);
+  height: clamp(96px, 8vw, 120px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -227,8 +227,8 @@ a {
 }
 
 .project-image {
-  width: 92%;
-  height: 92%;
+  width: 96%;
+  height: 96%;
   object-fit: contain;
   display: block;
   transition: transform 0.2s ease;
