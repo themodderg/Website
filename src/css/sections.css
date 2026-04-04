@@ -403,6 +403,58 @@ a {
   margin-right: auto;
 }
 
+.portfolio-thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.18s ease;
+}
+
+.portfolio-thumb:hover {
+  transform: scale(1.03);
+}
+
+.portfolio-lightbox {
+  position: fixed;
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(3px);
+  z-index: 90;
+}
+
+.portfolio-lightbox.open {
+  display: flex;
+}
+
+.portfolio-lightbox img {
+  width: min(92vw, 900px);
+  max-height: 90vh;
+  height: auto;
+  object-fit: contain;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+}
+
+.portfolio-lightbox-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 999px;
+  border: 1px solid var(--color-secondary-selected);
+  background: var(--color-secondary);
+  color: var(--color-text);
+  font-size: 1.2rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
 details {
   margin-bottom: 0.7rem;
 }
@@ -463,7 +515,8 @@ details[open] > summary::after {
 
 .adsbygoogle[data-ad-status="unfilled"],
 .adsbygoogle:empty {
-  background-color: #ffffff !important;
+  display: none !important;
+  background-color: transparent !important;
 }
 
 .mobile-ad-slot {
