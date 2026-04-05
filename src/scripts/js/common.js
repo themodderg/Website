@@ -25,11 +25,19 @@ const navbarHTML = `
       <i class="fa-brands fa-instagram"></i>
     </a>
 
-    <a href="https://www.fiverr.com/s/m5r7qZV" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Fiverr">
+    <a href="https://www.tumblr.com/blog/themodderg" target="_blank" rel="noopener noreferrer" class="social-link hover:text-pink-400" aria-label="Tumblr">
+      <i class="fa-brands fa-tumblr"></i>
+    </a>
+
+    <a href="https://www.deviantart.com/themodderg" target="_blank" rel="noopener noreferrer" class="social-link hover:text-green-400" aria-label="DeviantArt">
+      <i class="fa-brands fa-deviantart"></i>
+    </a>
+
+    <a href="https://www.fiverr.com/s/m5r7qZV" target="_blank" rel="noopener noreferrer" class="social-link fiverr-link" aria-label="Fiverr">
       <img src="./src/assets/images/fiverr_logo.png" 
         alt="Fiverr" 
         style="height: 1.25rem; width: auto;" 
-        class="object-contain hover:opacity-80">
+        class="object-contain">
     </a>
 
     <a href="https://discord.gg/EeNkjGZY37" target="_blank" rel="noopener noreferrer" class="social-link hover:text-indigo-500" aria-label="Discord">
@@ -59,9 +67,8 @@ function syncMobileAdSlots() {
       return;
     }
 
-    const status = ad.getAttribute("data-ad-status");
-    const isEmpty = ad.innerHTML.trim() === "" && ad.clientHeight === 0;
-    slot.style.display = status === "unfilled" || isEmpty ? "none" : "";
+    const status = (ad.getAttribute("data-ad-status") || "").toLowerCase();
+    slot.style.display = status === "unfilled" ? "none" : "";
   });
 }
 
@@ -101,5 +108,9 @@ window.addEventListener("resize", syncDesktopAdRails);
 
 syncMobileAdSlots();
 window.addEventListener("load", syncMobileAdSlots);
+window.addEventListener("pageshow", syncMobileAdSlots);
 setTimeout(syncMobileAdSlots, 1000);
 setTimeout(syncMobileAdSlots, 2500);
+setTimeout(syncMobileAdSlots, 5000);
+setTimeout(syncMobileAdSlots, 8000);
+setTimeout(syncMobileAdSlots, 12000);

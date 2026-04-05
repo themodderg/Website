@@ -192,6 +192,10 @@ a {
   transform: translateY(-1px);
 }
 
+.top-section .social-link.fiverr-link:hover img {
+  filter: brightness(0) saturate(100%) invert(66%) sepia(40%) saturate(906%) hue-rotate(73deg) brightness(93%) contrast(93%);
+}
+
 .name-section {
   text-align: center;
   padding-top: 1.5rem;
