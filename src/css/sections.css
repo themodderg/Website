@@ -538,7 +538,6 @@ details[open] > summary::after {
 
 .mobile-ad-slot {
   height: auto;
-  background-color: #101012;
   transition: background-color 0.2s ease;
 }
 
