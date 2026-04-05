@@ -59,19 +59,6 @@ const footerHTML = `
 document.body.insertAdjacentHTML("beforeend", footerHTML);
 document.body.insertAdjacentHTML("afterbegin", navbarHTML);
 
-function syncMobileAdSlots() {
-  const slots = document.querySelectorAll(".mobile-ad-slot");
-  slots.forEach((slot) => {
-    const ad = slot.querySelector(".adsbygoogle");
-    if (!ad) {
-      return;
-    }
-
-    const status = (ad.getAttribute("data-ad-status") || "").toLowerCase();
-    slot.style.display = status === "unfilled" ? "none" : "";
-  });
-}
-
 function syncDesktopAdRails() {
   const desktopLandscape = window.matchMedia("(min-width: 1280px) and (orientation: landscape)").matches;
   const sidebars = document.querySelectorAll(".ad-sidebar");
@@ -105,12 +92,3 @@ function syncDesktopAdRails() {
 
 syncDesktopAdRails();
 window.addEventListener("resize", syncDesktopAdRails);
-
-syncMobileAdSlots();
-window.addEventListener("load", syncMobileAdSlots);
-window.addEventListener("pageshow", syncMobileAdSlots);
-setTimeout(syncMobileAdSlots, 1000);
-setTimeout(syncMobileAdSlots, 2500);
-setTimeout(syncMobileAdSlots, 5000);
-setTimeout(syncMobileAdSlots, 8000);
-setTimeout(syncMobileAdSlots, 12000);

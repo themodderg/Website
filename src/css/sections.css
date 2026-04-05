@@ -483,8 +483,9 @@ details[open] > summary::after {
 
 
 .ad-sidebar {
-  flex: 0 0 300px;
-  width: 300px;
+  flex: 1 1 300px;
+  width: auto;
+  min-width: 300px;
   min-height: 0;
   height: 0;
   display: flex;
@@ -510,6 +511,7 @@ details[open] > summary::after {
   overflow: hidden;
   height: 100%;
   display: flex;
+  background-color: rgba(65, 66, 69, 0.32);
 }
 
 .ad-inner .adsbygoogle {
@@ -517,14 +519,14 @@ details[open] > summary::after {
   height: 100% !important;
 }
 
-.adsbygoogle[data-ad-status="unfilled"],
-.adsbygoogle:empty {
+.adsbygoogle[data-ad-status="unfilled"] {
   display: none !important;
   background-color: transparent !important;
 }
 
 .mobile-ad-slot {
   height: auto;
+  background-color: rgba(65, 66, 69, 0.32);
 }
 
 
