@@ -399,6 +399,7 @@ a {
   margin-left: auto;
   margin-right: auto;
   align-self: flex-start;
+  margin-bottom: 0.75rem;
 }
 
 #pics-container {
@@ -618,7 +619,7 @@ details[open] > summary::after {
 
 footer {
   width: min(1200px, calc(100% - 1.5rem));
-  margin: 1rem auto;
+  margin: 0 auto 1rem auto;
   border: 1px solid var(--color-secondary-selected);
   border-radius: 0.95rem;
 }
