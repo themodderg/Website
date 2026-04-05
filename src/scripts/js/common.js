@@ -29,7 +29,7 @@ const navbarHTML = `
       <i class="fa-brands fa-tumblr"></i>
     </a>
 
-    <a href="https://www.deviantart.com/themodderg" target="_blank" rel="noopener noreferrer" class="social-link hover:text-green-400" aria-label="DeviantArt">
+    <a href="https://www.deviantart.com/modderg" target="_blank" rel="noopener noreferrer" class="social-link hover:text-green-400" aria-label="DeviantArt">
       <i class="fa-brands fa-deviantart"></i>
     </a>
 
@@ -58,6 +58,50 @@ const footerHTML = `
 
 document.body.insertAdjacentHTML("beforeend", footerHTML);
 document.body.insertAdjacentHTML("afterbegin", navbarHTML);
+
+function syncAdPlaceholderTint() {
+  const hosts = document.querySelectorAll(".ad-inner, .mobile-ad-slot");
+
+  hosts.forEach((host) => {
+    const ad = host.querySelector(".adsbygoogle");
+    if (!ad) {
+      return;
+    }
+
+    const status = (ad.getAttribute("data-ad-status") || "").toLowerCase();
+    const isFilled = status === "filled";
+
+    host.classList.toggle("ad-filled", isFilled);
+  });
+}
+
+function watchAdPlaceholderTint() {
+  const adNodes = document.querySelectorAll(".adsbygoogle");
+  if (adNodes.length === 0) {
+    return;
+  }
+
+  const observer = new MutationObserver(() => {
+    syncAdPlaceholderTint();
+  });
+
+  adNodes.forEach((ad) => {
+    observer.observe(ad, {
+      attributes: true,
+      attributeFilter: ["data-ad-status"],
+      childList: true,
+      subtree: true,
+    });
+  });
+
+  syncAdPlaceholderTint();
+  window.addEventListener("load", syncAdPlaceholderTint);
+  window.addEventListener("pageshow", syncAdPlaceholderTint);
+  setTimeout(syncAdPlaceholderTint, 1000);
+  setTimeout(syncAdPlaceholderTint, 2500);
+  setTimeout(syncAdPlaceholderTint, 5000);
+  setTimeout(syncAdPlaceholderTint, 8000);
+}
 
 function syncDesktopAdRails() {
   const desktopLandscape = window.matchMedia("(min-width: 1280px) and (orientation: landscape)").matches;
@@ -92,3 +136,4 @@ function syncDesktopAdRails() {
 
 syncDesktopAdRails();
 window.addEventListener("resize", syncDesktopAdRails);
+watchAdPlaceholderTint();
