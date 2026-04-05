@@ -550,6 +550,25 @@ details[open] > summary::after {
   margin: 0 auto;
 }
 
+@media (max-width: 728px) {
+  .mobile-ad-slot {
+    overflow: hidden;
+  }
+
+  .mobile-ad-slot > div {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    display: flex;
+    justify-content: center;
+  }
+
+  .mobile-ad-slot .adsbygoogle {
+    transform: scale(calc((100vw - 1rem) / 728));
+    transform-origin: top center;
+    margin: 0;
+  }
+}
+
 
 .sheet-shell {
   margin-top: 10px;
