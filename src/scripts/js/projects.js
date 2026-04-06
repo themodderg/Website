@@ -1,7 +1,7 @@
 const projects = [
   {
     title: "Tameable Beasts", desc: "Mod that adds more tameable mobs.", link: "tb_lore.html",
-    img: "./src/assets/images/tb_logo.png", color: "tb-text",
+    img: "./src/assets/images/tb_logo.png", hoverImg: "./src/assets/images/tameable_beasts/render.png", color: "tb-text",
     tags: ["Forge", "NeoForge", "1.20"]
   },
 
@@ -43,7 +43,7 @@ const projects = [
 
   {
     title: "More Golems", desc: "Mod that adds more vanilla styled golems.", link: "mgolems_lore.html",
-    img: "./src/assets/images/more_golems.png", color: "mg-text",
+    img: "./src/assets/images/more_golems.png", hoverImg: "./src/assets/images/more_golems/render.png", color: "mg-text",
     tags: ["Forge", "NeoForge", "1.20"]
   },
 
@@ -68,6 +68,7 @@ function renderProjects(projectsToRender) {
     <a href="${p.link}" class="secondary-button project-button">
       <div class="project-top-row">
         <div class="project-image-box">
+          ${p.hoverImg ? `<img src="${p.hoverImg}" alt="" aria-hidden="true" class="project-hover-image">` : ''}
           <img src="${p.img}" alt="${p.title}" class="project-image">
         </div>
 
