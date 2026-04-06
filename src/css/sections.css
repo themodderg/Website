@@ -557,11 +557,6 @@ details[open] > summary::after {
   transition: background-color 0.2s ease;
 }
 
-.ad-inner.ad-filled,
-.mobile-ad-slot.ad-filled {
-  background-color: transparent;
-}
-
 .ad-inner .adsbygoogle {
   display: block;
   flex: 0 0 auto;
