@@ -515,6 +515,9 @@ details[open] > summary::after {
   flex: 1 1 auto;
   align-items: stretch;
   background-color: #101012;
+  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.08) 3px, transparent 3px), radial-gradient(circle, rgba(255, 255, 255, 0.08) 3px, transparent 3px);
+  background-size: 72px 72px;
+  background-position: 0 0, 36px 36px;
   transition: background-color 0.2s ease;
 }
 
@@ -539,6 +542,9 @@ details[open] > summary::after {
 
 .mobile-ad-slot {
   height: auto;
+  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.08) 3px, transparent 3px), radial-gradient(circle, rgba(255, 255, 255, 0.08) 3px, transparent 3px);
+  background-size: 72px 72px;
+  background-position: 0 0, 36px 36px;
   transition: background-color 0.2s ease;
 }
 
