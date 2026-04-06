@@ -229,9 +229,7 @@ a {
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  border: 1px solid var(--color-secondary-selected);
   border-radius: 0.8rem;
-  background-color: var(--surface-glow);
   overflow: visible;
 }
 
@@ -310,7 +308,7 @@ a {
   background-color: var(--color-primary);
   color: var(--color-text);
   border: 1px solid var(--color-secondary-selected);
-  border-radius: 999px;
+  border-radius: 9px;
   padding: 0.22rem 0.62rem;
   font-size: clamp(0.72rem, 0.95vw, 0.79rem);
   white-space: nowrap;
