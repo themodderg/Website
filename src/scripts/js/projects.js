@@ -19,7 +19,7 @@ const projects = [
 
   {
     title: "Companions!", desc: "Mod that adds tameable mobs and a boss.", link: "https://www.curseforge.com/minecraft/mc-mods/companions-mod",
-    img: "./src/assets/images/co_logo.png", color: "co-text",
+    img: "./src/assets/images/co_logo.png", hoverImg: "./src/assets/images/companions/render.png", color: "co-text",
     tags: ["Forge", "NeoForge", "Fabric", "1.20", "1.21", "MOTY"]
   },
 
