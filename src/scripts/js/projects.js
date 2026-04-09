@@ -54,14 +54,25 @@ const projects = [
   }
 ];
 
-const selectedTags = new Set();
 const projectsContainer = document.getElementById("projects-container");
-const filterBtn = document.getElementById("filter-btn");
-const closeFilterBtn = document.getElementById("close-filter-btn");
-const clearFiltersBtn = document.getElementById("clear-filters-btn");
-const filterPanel = document.getElementById("filter-panel");
-const filterOverlay = document.getElementById("filter-overlay");
-const filterTagsContainer = document.getElementById("filter-tags-container");
+
+function attachProjectTagWheelScrolling() {
+  document.querySelectorAll(".project-tags").forEach((tagsRow) => {
+    tagsRow.addEventListener("wheel", (event) => {
+      if (tagsRow.scrollWidth <= tagsRow.clientWidth) {
+        return;
+      }
+
+      const delta = Math.abs(event.deltaY) > Math.abs(event.deltaX) ? event.deltaY : event.deltaX;
+      if (delta === 0) {
+        return;
+      }
+
+      event.preventDefault();
+      tagsRow.scrollLeft += delta;
+    }, { passive: false });
+  });
+}
 
 function renderProjects(projectsToRender) {
   projectsContainer.innerHTML = projectsToRender.map(p => `
@@ -85,80 +96,8 @@ function renderProjects(projectsToRender) {
 
     </a>
   `).join('');
+
+  attachProjectTagWheelScrolling();
 }
-
-function getUniqueTags() {
-  const tags = new Set();
-  projects.forEach(p => p.tags.forEach(tag => tags.add(tag)));
-  return Array.from(tags).sort();
-}
-
-function renderFilterTags() {
-  const tags = getUniqueTags();
-  filterTagsContainer.innerHTML = tags.map(tag => `
-    <div class="filter-tag ${selectedTags.has(tag) ? 'active' : ''}" data-tag="${tag}">
-      ${tag}
-    </div>
-  `).join('');
-
-  document.querySelectorAll('.filter-tag').forEach(tagElem => {
-    tagElem.addEventListener('click', () => {
-      const tag = tagElem.dataset.tag;
-      toggleTag(tag);
-    });
-  });
-}
-
-function toggleTag(tag) {
-  if (selectedTags.has(tag)) {
-    selectedTags.delete(tag);
-  } else {
-    selectedTags.add(tag);
-  }
-
-  renderFilterTags();
-  filterProjects();
-}
-
-function filterProjects() {
-  if (selectedTags.size === 0) {
-    renderProjects(projects);
-  } else {
-    const filtered = projects.filter(p => {
-      return p.tags.some(tag => selectedTags.has(tag));
-    });
-    renderProjects(filtered);
-  }
-}
-
-function openFilter() {
-  filterPanel.classList.remove('translate-x-full');
-  filterOverlay.classList.remove('hidden');
-  setTimeout(() => {
-    filterOverlay.classList.remove('opacity-0');
-  }, 10);
-  document.body.style.overflow = 'hidden';
-}
-
-function closeFilter() {
-  filterPanel.classList.add('translate-x-full');
-  filterOverlay.classList.add('opacity-0');
-  setTimeout(() => {
-    filterOverlay.classList.add('hidden');
-  }, 300);
-  document.body.style.overflow = '';
-}
-
-function clearFilters() {
-  selectedTags.clear();
-  renderFilterTags();
-  filterProjects();
-}
-
-filterBtn.addEventListener('click', openFilter);
-closeFilterBtn.addEventListener('click', closeFilter);
-filterOverlay.addEventListener('click', closeFilter);
-clearFiltersBtn.addEventListener('click', clearFilters);
 
 renderProjects(projects);
-renderFilterTags();
