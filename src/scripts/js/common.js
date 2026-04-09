@@ -39,7 +39,7 @@ const navbarHTML = `
       <i class="fa-brands fa-deviantart"></i>
     </a>
 
-    <a href="https://www.fiverr.com/s/m5r7qZV" target="_blank" rel="noopener noreferrer" class="social-link fiverr-link" aria-label="Fiverr">
+    <a href="https://www.fiverr.com/modderg" target="_blank" rel="noopener noreferrer" class="social-link fiverr-link" aria-label="Fiverr">
       <img src="./src/assets/images/fiverr_logo.png" 
         alt="Fiverr" 
         style="height: 1.25rem; width: auto;" 
