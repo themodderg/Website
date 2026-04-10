@@ -31,13 +31,13 @@ const projects = [
 
   {
     title: "P.E.K.K.A. Craft", desc: "Mc mod that adds tameable P.E.K.K.A.s", link: "pk_lore.html",
-    img: "./src/assets/images/pk_logo.png", color: "pk-text",
+    img: "./src/assets/images/pk_logo.png", hoverImg: "./src/assets/images/pk_craft/render.png", color: "pk-text",
     tags: ["Forge", "NeoForge", "Bedrock", "1.20"]
   },
 
   {
     title: "Animights", desc: "Mod that adds tameable loyal squires.", link: "animights_lore.html",
-    img: "./src/assets/images/am_logo.png", color: "am-text",
+    img: "./src/assets/images/am_logo.png", hoverImg: "./src/assets/images/animights/render.png", color: "am-text",
     tags: ["Forge", "NeoForge", "1.20"]
   },
 
