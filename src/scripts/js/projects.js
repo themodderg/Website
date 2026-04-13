@@ -13,7 +13,7 @@ const projects = [
 
   {
     title: "Model Portfolio", desc: "Compilation of my best 3D Blockbench assets.", link: "portfolio.html",
-    img: "./src/assets/images/p_logo.png", color: "p-text",
+    img: "./src/assets/images/p_logo.png", hoverImg: "./src/assets/images/portfolio/render.png", color: "p-text",
     tags: ["Art Collection"]
   },
 
