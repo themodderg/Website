@@ -679,14 +679,150 @@ a {
 .hero-badges {
   display: flex;
   flex-direction: column;
-  gap: 1vh;
+  gap: 0.55vh;
   align-items: center;
 }
 
-.hero-badges img {
-  height: clamp(22px, 3.2vh, 28px);
+.hero-badge-card {
+  --badge-accent: var(--color-special);
+  --badge-accent-soft: rgba(41, 159, 162, 0.14);
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
   width: auto;
+  max-width: 100%;
+  min-width: 0;
+  padding: 0.5rem 0.7rem 0.5rem 0.9rem;
+  background: linear-gradient(165deg, rgba(65, 66, 69, 0.42) 0%, var(--color-secondary) 100%);
+  color: var(--color-text);
+  text-decoration: none;
+  border: 1px solid var(--color-secondary-selected);
+  border-radius: 0.95rem;
+  box-shadow: var(--surface-shadow);
+  overflow: hidden;
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.hero-badge-card::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 0.34rem;
+  background: var(--badge-accent);
+}
+
+.hero-badge-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, var(--badge-accent-soft) 0%, transparent 48%);
+  pointer-events: none;
+}
+
+.hero-badge-card:hover {
+  transform: translateY(-1px);
+  border-color: var(--badge-accent);
+}
+
+.hero-badge-card:focus-visible {
+  outline: 2px solid var(--badge-accent);
+  outline-offset: 2px;
+}
+
+.hero-badge-icon {
+  position: relative;
+  z-index: 1;
+  flex: 0 0 auto;
+  width: 1.62rem;
+  height: 1.62rem;
+  border-radius: 0.58rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--badge-accent-soft);
+  color: var(--badge-accent);
+  font-size: 0.88rem;
+}
+
+.hero-badge-logo {
+  width: 0.96rem;
+  height: 0.96rem;
   display: block;
+}
+
+.hero-badge-copy {
+  position: relative;
+  z-index: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 1.08;
+}
+
+.hero-badge-title {
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.hero-badge-subtitle {
+  font-size: 0.68rem;
+  color: var(--color-text);
+  opacity: 0.82;
+}
+
+.hero-badge-card-java {
+  --badge-accent: #f06400;
+  --badge-accent-soft: rgba(240, 100, 0, 0.16);
+}
+
+.hero-badge-card-bedrock {
+  --badge-accent: #61ad58;
+  --badge-accent-soft: rgba(97, 173, 88, 0.16);
+}
+
+.hero-badge-card-java,
+.hero-badge-card-bedrock {
+  background: linear-gradient(165deg, rgba(65, 66, 69, 0.28) 0%, rgba(43, 45, 48, 0.92) 100%);
+  border-style: dashed;
+  box-shadow: none;
+}
+
+.hero-badge-card-java::before,
+.hero-badge-card-bedrock::before {
+  width: 0.26rem;
+  opacity: 0.85;
+}
+
+.hero-badge-card-java:hover,
+.hero-badge-card-bedrock:hover {
+  transform: none;
+  border-color: var(--color-secondary-selected);
+}
+
+.hero-badge-card-java .hero-badge-title,
+.hero-badge-card-bedrock .hero-badge-title {
+  letter-spacing: 0.12em;
+}
+
+.hero-badge-card-java .hero-badge-subtitle,
+.hero-badge-card-bedrock .hero-badge-subtitle {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  opacity: 0.68;
+}
+
+.hero-badge-card-curseforge {
+  --badge-accent: #eb622b;
+  --badge-accent-soft: rgba(235, 98, 43, 0.16);
+}
+
+.hero-badge-card-modrinth {
+  --badge-accent: #1bd96a;
+  --badge-accent-soft: rgba(27, 217, 106, 0.16);
 }
 
 

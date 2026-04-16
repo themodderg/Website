@@ -239,6 +239,72 @@ document.addEventListener("keydown", (event) => {
   }
 });
 
+function parseBadgeCount(svgText) {
+  const titleMatch = svgText.match(/<title>([^<]+)<\/title>/i);
+  if (!titleMatch || !titleMatch[1]) {
+    return null;
+  }
+
+  const title = titleMatch[1];
+  const separatorIndex = title.indexOf(":");
+  if (separatorIndex === -1) {
+    return title.trim() || null;
+  }
+
+  return title.slice(separatorIndex + 1).trim() || null;
+}
+
+function syncHeroBrandIcons() {
+  const brandLogoMap = {
+    "hero-badge-card-curseforge": {
+      src: "https://cdn.simpleicons.org/curseforge/eb622b",
+      alt: "CurseForge logo",
+    },
+    "hero-badge-card-modrinth": {
+      src: "https://cdn.simpleicons.org/modrinth/1bd96a",
+      alt: "Modrinth logo",
+    },
+  };
+
+  Object.entries(brandLogoMap).forEach(([className, logo]) => {
+    document.querySelectorAll(`.${className} .hero-badge-icon`).forEach((iconHost) => {
+      iconHost.innerHTML = `<img class="hero-badge-logo" src="${logo.src}" alt="${logo.alt}" loading="lazy" decoding="async">`;
+    });
+  });
+}
+
+function syncHeroDownloadCounts() {
+  const cards = document.querySelectorAll(".hero-badge-card[data-count-url]");
+  if (cards.length === 0) {
+    return;
+  }
+
+  cards.forEach(async (card) => {
+    const subtitle = card.querySelector(".hero-badge-subtitle");
+    const countUrl = card.getAttribute("data-count-url");
+    if (!subtitle || !countUrl) {
+      return;
+    }
+
+    try {
+      const response = await fetch(countUrl, { cache: "no-store" });
+      if (!response.ok) {
+        return;
+      }
+
+      const svgText = await response.text();
+      const count = parseBadgeCount(svgText);
+      if (!count) {
+        return;
+      }
+
+      subtitle.textContent = `${count} downloads`;
+    } catch (_error) {
+      // Keep static subtitle fallback if the count endpoint cannot be reached.
+    }
+  });
+}
+
 function syncAdPlaceholderTint() {
   const hosts = document.querySelectorAll(".ad-inner, .mobile-ad-slot");
 
@@ -317,3 +383,5 @@ function syncDesktopAdRails() {
 syncDesktopAdRails();
 window.addEventListener("resize", syncDesktopAdRails);
 watchAdPlaceholderTint();
+syncHeroBrandIcons();
+syncHeroDownloadCounts();
