@@ -7,7 +7,7 @@ const projects = [
 
   {
     title: "The Digimod", desc: "Mod that ports Digimon into Minecraft.", link: "td_lore.html",
-    img: "./src/assets/images/td_logo.png", color: "td-text",
+    img: "./src/assets/images/td_logo.png", hoverImg: "./src/assets/images/the_digimod/render.png", color: "td-text",
     tags: ["Forge", "NeoForge", "1.20"]
   },
 
@@ -25,7 +25,7 @@ const projects = [
 
   {
     title: "Digimod [Cobblemon]", desc: "Addon that brings Digimod into Cobblemon.", link: "txc_lore.html",
-    img: "./src/assets/images/txc_logo.png", color: "txc-text",
+    img: "./src/assets/images/txc_logo.png", hoverImg: "./src/assets/images/digimodxcobblemon/render.png", color: "txc-text",
     tags: ["Forge", "NeoForge", "1.20"]
   },
 
