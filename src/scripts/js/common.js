@@ -117,6 +117,9 @@ const navbarHTML = `
         <a class="site-sidebar-project site-sidebar-project-pk" href="pk_lore.html">
           <span class="site-sidebar-project-row"><img class="site-sidebar-project-icon" src="./src/assets/images/pk_logo.png" alt=""><span>PEKKA Craft</span></span>
         </a>
+        <a class="site-sidebar-project site-sidebar-project-co" href="https://www.curseforge.com/minecraft/mc-mods/companions-mod" target="_blank" rel="noopener noreferrer">
+          <span class="site-sidebar-project-row co-text"><img class="site-sidebar-project-icon" src="./src/assets/images/co_logo.png" alt=""><span>Companions!</span></span>
+        </a>
       </div>
     </section>
 
