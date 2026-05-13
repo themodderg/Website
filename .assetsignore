@@ -1,0 +1,20 @@
+# Exclude repository internals and local tooling files from static asset upload.
+.git/
+.github/
+.wrangler/
+node_modules/
+
+# Exclude project metadata/dev files that should not be publicly served.
+.gitignore
+.gitattributes
+README.md
+Dockerfile
+wrangler.json
+wrangler.jsonc
+wrangler.toml
+
+# Exclude editor/backup artifacts.
+*~kee
+
+# Exclude local utility scripts not needed by the website runtime.
+src/scripts/check_ads_integrity.py

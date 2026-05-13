@@ -1,49 +1,49 @@
 const projects = [
   {
     title: "Tameable Beasts", desc: "Mod that adds more tameable mobs.", link: "tb_lore.html",
-    img: "./src/assets/images/tb_logo.png", color: "tb-text",
+    img: "./src/assets/images/tb_logo.png", hoverImg: "./src/assets/images/tameable_beasts/render.png", color: "tb-text",
     tags: ["Forge", "NeoForge", "1.20"]
   },
 
   {
     title: "The Digimod", desc: "Mod that ports Digimon into Minecraft.", link: "td_lore.html",
-    img: "./src/assets/images/td_logo.png", color: "td-text",
+    img: "./src/assets/images/td_logo.png", hoverImg: "./src/assets/images/the_digimod/render.png", color: "td-text",
     tags: ["Forge", "NeoForge", "1.20"]
   },
 
   {
     title: "Model Portfolio", desc: "Compilation of my best 3D Blockbench assets.", link: "portfolio.html",
-    img: "./src/assets/images/p_logo.png", color: "p-text",
+    img: "./src/assets/images/p_logo.png", hoverImg: "./src/assets/images/portfolio/render.png", color: "p-text",
     tags: ["Art Collection"]
   },
 
   {
     title: "Companions!", desc: "Mod that adds tameable mobs and a boss.", link: "https://www.curseforge.com/minecraft/mc-mods/companions-mod",
-    img: "./src/assets/images/co_logo.png", color: "co-text",
+    img: "./src/assets/images/co_logo.png", hoverImg: "./src/assets/images/companions/render.png", color: "co-text",
     tags: ["Forge", "NeoForge", "Fabric", "1.20", "1.21", "MOTY"]
   },
 
   {
     title: "Digimod [Cobblemon]", desc: "Addon that brings Digimod into Cobblemon.", link: "txc_lore.html",
-    img: "./src/assets/images/txc_logo.png", color: "txc-text",
+    img: "./src/assets/images/txc_logo.png", hoverImg: "./src/assets/images/digimodxcobblemon/render.png", color: "txc-text",
     tags: ["Forge", "NeoForge", "1.20"]
   },
 
   {
     title: "P.E.K.K.A. Craft", desc: "Mc mod that adds tameable P.E.K.K.A.s", link: "pk_lore.html",
-    img: "./src/assets/images/pk_logo.png", color: "pk-text",
+    img: "./src/assets/images/pk_logo.png", hoverImg: "./src/assets/images/pk_craft/render.png", color: "pk-text",
     tags: ["Forge", "NeoForge", "Bedrock", "1.20"]
   },
 
   {
     title: "Animights", desc: "Mod that adds tameable loyal squires.", link: "animights_lore.html",
-    img: "./src/assets/images/am_logo.png", color: "am-text",
+    img: "./src/assets/images/am_logo.png", hoverImg: "./src/assets/images/animights/render.png", color: "am-text",
     tags: ["Forge", "NeoForge", "1.20"]
   },
 
   {
     title: "More Golems", desc: "Mod that adds more vanilla styled golems.", link: "mgolems_lore.html",
-    img: "./src/assets/images/more_golems.png", color: "mg-text",
+    img: "./src/assets/images/more_golems.png", hoverImg: "./src/assets/images/more_golems/render.png", color: "mg-text",
     tags: ["Forge", "NeoForge", "1.20"]
   },
 
@@ -54,20 +54,32 @@ const projects = [
   }
 ];
 
-const selectedTags = new Set();
 const projectsContainer = document.getElementById("projects-container");
-const filterBtn = document.getElementById("filter-btn");
-const closeFilterBtn = document.getElementById("close-filter-btn");
-const clearFiltersBtn = document.getElementById("clear-filters-btn");
-const filterPanel = document.getElementById("filter-panel");
-const filterOverlay = document.getElementById("filter-overlay");
-const filterTagsContainer = document.getElementById("filter-tags-container");
+
+function attachProjectTagWheelScrolling() {
+  document.querySelectorAll(".project-tags").forEach((tagsRow) => {
+    tagsRow.addEventListener("wheel", (event) => {
+      if (tagsRow.scrollWidth <= tagsRow.clientWidth) {
+        return;
+      }
+
+      const delta = Math.abs(event.deltaY) > Math.abs(event.deltaX) ? event.deltaY : event.deltaX;
+      if (delta === 0) {
+        return;
+      }
+
+      event.preventDefault();
+      tagsRow.scrollLeft += delta;
+    }, { passive: false });
+  });
+}
 
 function renderProjects(projectsToRender) {
   projectsContainer.innerHTML = projectsToRender.map(p => `
     <a href="${p.link}" class="secondary-button project-button">
       <div class="project-top-row">
         <div class="project-image-box">
+          ${p.hoverImg ? `<img src="${p.hoverImg}" alt="" aria-hidden="true" class="project-hover-image">` : ''}
           <img src="${p.img}" alt="${p.title}" class="project-image">
         </div>
 
@@ -84,80 +96,8 @@ function renderProjects(projectsToRender) {
 
     </a>
   `).join('');
+
+  attachProjectTagWheelScrolling();
 }
-
-function getUniqueTags() {
-  const tags = new Set();
-  projects.forEach(p => p.tags.forEach(tag => tags.add(tag)));
-  return Array.from(tags).sort();
-}
-
-function renderFilterTags() {
-  const tags = getUniqueTags();
-  filterTagsContainer.innerHTML = tags.map(tag => `
-    <div class="filter-tag ${selectedTags.has(tag) ? 'active' : ''}" data-tag="${tag}">
-      ${tag}
-    </div>
-  `).join('');
-
-  document.querySelectorAll('.filter-tag').forEach(tagElem => {
-    tagElem.addEventListener('click', () => {
-      const tag = tagElem.dataset.tag;
-      toggleTag(tag);
-    });
-  });
-}
-
-function toggleTag(tag) {
-  if (selectedTags.has(tag)) {
-    selectedTags.delete(tag);
-  } else {
-    selectedTags.add(tag);
-  }
-
-  renderFilterTags();
-  filterProjects();
-}
-
-function filterProjects() {
-  if (selectedTags.size === 0) {
-    renderProjects(projects);
-  } else {
-    const filtered = projects.filter(p => {
-      return p.tags.some(tag => selectedTags.has(tag));
-    });
-    renderProjects(filtered);
-  }
-}
-
-function openFilter() {
-  filterPanel.classList.remove('translate-x-full');
-  filterOverlay.classList.remove('hidden');
-  setTimeout(() => {
-    filterOverlay.classList.remove('opacity-0');
-  }, 10);
-  document.body.style.overflow = 'hidden';
-}
-
-function closeFilter() {
-  filterPanel.classList.add('translate-x-full');
-  filterOverlay.classList.add('opacity-0');
-  setTimeout(() => {
-    filterOverlay.classList.add('hidden');
-  }, 300);
-  document.body.style.overflow = '';
-}
-
-function clearFilters() {
-  selectedTags.clear();
-  renderFilterTags();
-  filterProjects();
-}
-
-filterBtn.addEventListener('click', openFilter);
-closeFilterBtn.addEventListener('click', closeFilter);
-filterOverlay.addEventListener('click', closeFilter);
-clearFiltersBtn.addEventListener('click', clearFilters);
 
 renderProjects(projects);
-renderFilterTags();
