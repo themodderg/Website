@@ -28,7 +28,7 @@
   <section class="hero">
     <div class="hero-row">
       <img class="hero-logo" src="./src/assets/images/more_golems/Logo.png" alt="More Golems">
-      <div class="hero-badges">
+      <div class="hero-badges hero-badges-right">
         <div class="hero-badge-card hero-badge-card-java">
           <span class="hero-badge-icon"><i class="fa-brands fa-java"></i></span>
           <span class="hero-badge-copy">
@@ -44,8 +44,8 @@
             <span class="hero-badge-subtitle">Downloads</span>
           </span>
         </a>
-        <a class="hero-badge-card hero-badge-card-modrinth" href="https://modrinth.com/mod/more-golems" target="_blank"
-          data-count-url="https://img.shields.io/modrinth/dt/more-golems?logo=modrinth&amp;labelColor=101013&amp;color=1bd96a" rel="nofollow noopener">
+        <a class="hero-badge-card hero-badge-card-modrinth" href="https://modrinth.com/mod/moregolems" target="_blank"
+          data-count-url="https://img.shields.io/modrinth/dt/moregolems?logo=modrinth&amp;labelColor=101013&amp;color=1bd96a" rel="nofollow noopener">
           <span class="hero-badge-icon"><i class="fa-solid fa-mountain"></i></span>
           <span class="hero-badge-copy">
             <span class="hero-badge-title">Modrinth</span>
@@ -94,7 +94,30 @@
         style="margin: 0 auto; height: 64vh;"></img>
 
 
-      <h2 id="mg-lore" class="lore-box" style="width:100%; "></h2>
+      <div class="about-row">
+        <section class="lore-box lore-section about-box">
+          <h2 class="lore-section-title">About The Mod</h2>
+          <div id="mg-lore" class="lore-section-body"></div>
+        </section>
+
+        <aside class="lore-box lore-section mod-content-box">
+          <h2 class="lore-section-title">Mod Content</h2>
+          <ul class="mod-content-list">
+            <li>
+              <a href="#section-mobs" class="mod-content-link">
+                <img src="./src/assets/images/more_golems/icons/mobs.png" alt="" class="mod-content-icon">
+                <span>Mobs</span>
+              </a>
+            </li>
+            <li>
+              <a href="#section-items" class="mod-content-link">
+                <img src="./src/assets/images/more_golems/icons/items.png" alt="" class="mod-content-icon">
+                <span>Items</span>
+              </a>
+            </li>
+          </ul>
+        </aside>
+      </div>
 
 
       <div class="mb-1">
@@ -142,7 +165,81 @@
           </div>
         </details>
       </div>
+
+
+      <div class="content-lists">
+        <section id="section-mobs" class="lore-box lore-section">
+          <h2 class="lore-section-title">Mobs</h2>
+          <p class="mod-content-intro">
+            New golem variants inspired by different biomes and structures. Each one is built from its
+            own material set and brings its own way of defending its territory.
+          </p>
+          <ul class="mod-content-list">
+            <li>
+              <img src="./src/assets/images/more_golems/icons/mobs/cactus_golem.png" alt="" class="mod-content-icon">
+              <span>Cactus Golem</span>
+            </li>
+            <li>
+              <img src="./src/assets/images/more_golems/icons/mobs/gold_golem.png" alt="" class="mod-content-icon">
+              <span>Gold Golem</span>
+            </li>
+            <li>
+              <img src="./src/assets/images/more_golems/icons/mobs/castle_golem.png" alt="" class="mod-content-icon">
+              <span>Castle Golem</span>
+            </li>
+          </ul>
+        </section>
+
+        <section id="section-items" class="lore-box lore-section">
+          <h2 class="lore-section-title">Items</h2>
+          <p class="mod-content-intro">
+            A handful of weapons, projectiles and materials tied to the golems and the places they
+            come from. Some drop from mobs, others are crafted from what they leave behind.
+          </p>
+          <ul class="mod-content-list">
+            <li>
+              <a href="./mgolems_blowgun.html" class="mod-content-link">
+                <img src="./src/assets/images/more_golems/icons/items/blowgun.png" alt="" class="mod-content-icon">
+                <span>Blowgun</span>
+              </a>
+            </li>
+            <li>
+              <a href="./mgolems_dart.html" class="mod-content-link">
+                <img src="./src/assets/images/more_golems/icons/items/dart.png" alt="" class="mod-content-icon">
+                <span>Dart</span>
+              </a>
+            </li>
+            <li>
+              <a href="./mgolems_solaris_sword.html" class="mod-content-link">
+                <span class="mod-content-icon solaris-anim-icon" aria-label="Solaris Sword">
+                  <span class="solaris-anim">
+                    <img src="./src/assets/images/more_golems/icons/items/solaris_stage_0.png" alt="">
+                    <img src="./src/assets/images/more_golems/icons/items/solaris_stage_1.png" alt="">
+                    <img src="./src/assets/images/more_golems/icons/items/solaris_stage_2.png" alt="">
+                    <img src="./src/assets/images/more_golems/icons/items/solaris_stage_3.png" alt="">
+                    <img src="./src/assets/images/more_golems/icons/items/solaris_stage_4.gif" alt="">
+                  </span>
+                </span>
+                <span>Solaris Sword</span>
+              </a>
+            </li>
+            <li>
+              <a href="./mgolems_concrete_shield.html" class="mod-content-link">
+                <img src="./src/assets/images/more_golems/icons/items/concrete_shield.png" alt="" class="mod-content-icon">
+                <span>Concrete Shield</span>
+              </a>
+            </li>
+            <li>
+              <a href="./mgolems_cactus_spine.html" class="mod-content-link">
+                <img src="./src/assets/images/more_golems/icons/items/cactus_spine.png" alt="" class="mod-content-icon">
+                <span>Cactus Spine</span>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </div>
     </div>
+
 
 
 
