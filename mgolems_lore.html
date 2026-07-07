@@ -176,21 +176,28 @@
           </p>
           <ul class="mod-content-list">
             <li>
-              <img src="./src/assets/images/more_golems/icons/mobs/cactus_golem.png" alt="" class="mod-content-icon">
-              <span>Cactus Golem</span>
+              <a href="./mgolems_cactus_golem.html" class="mod-content-link">
+                <img src="./src/assets/images/more_golems/icons/mobs/cactus_golem.png" alt="" class="mod-content-icon">
+                <span>Cactus Golem</span>
+              </a>
             </li>
             <li>
-              <img src="./src/assets/images/more_golems/icons/mobs/gold_golem.png" alt="" class="mod-content-icon">
-              <span>Gold Golem</span>
+              <span class="mod-content-link">
+                <img src="./src/assets/images/more_golems/icons/mobs/gold_golem.png" alt="" class="mod-content-icon">
+                <span>Gold Golem</span>
+              </span>
             </li>
             <li>
-              <img src="./src/assets/images/more_golems/icons/mobs/castle_golem.png" alt="" class="mod-content-icon">
-              <span>Castle Golem</span>
+              <span class="mod-content-link">
+                <img src="./src/assets/images/more_golems/icons/mobs/castle_golem.png" alt="" class="mod-content-icon">
+                <span>Castle Golem</span>
+              </span>
             </li>
           </ul>
         </section>
 
-        <section id="section-items" class="lore-box lore-section">
+        <div class="item-overview">
+        <section id="section-items" class="lore-box lore-section item-toc">
           <h2 class="lore-section-title">Items</h2>
           <p class="mod-content-intro">
             A handful of weapons, projectiles and materials tied to the golems and the places they
@@ -237,6 +244,13 @@
             </li>
           </ul>
         </section>
+
+        <aside class="lore-box lore-section item-infobox items-rotator">
+          <a id="items-rotator-link" href="./mgolems_blowgun.html" class="item-infobox-image items-rotator-image">
+            <img id="items-rotator-img" src="./src/assets/images/more_golems/icons/items/blowgun.png" alt="Blowgun">
+          </a>
+        </aside>
+        </div>
       </div>
     </div>
 
@@ -273,6 +287,29 @@
 
   <script src="./src/scripts/js/common.js"></script>
   <script src="./src/scripts/js/texts/more_golems.js"></script>
+  <script>
+    (function () {
+      var items = [
+        { name: 'Blowgun', img: './src/assets/images/more_golems/icons/items/blowgun.png', href: './mgolems_blowgun.html' },
+        { name: 'Dart', img: './src/assets/images/more_golems/icons/items/dart.png', href: './mgolems_dart.html' },
+        { name: 'Solaris Sword', img: './src/assets/images/more_golems/icons/items/solaris_stage_4.gif', href: './mgolems_solaris_sword.html' },
+        { name: 'Concrete Shield', img: './src/assets/images/more_golems/icons/items/concrete_shield.png', href: './mgolems_concrete_shield.html' },
+        { name: 'Cactus Spine', img: './src/assets/images/more_golems/icons/items/cactus_spine.png', href: './mgolems_cactus_spine.html' }
+      ];
+      var linkEl = document.getElementById('items-rotator-link');
+      var imgEl = document.getElementById('items-rotator-img');
+      if (!linkEl || !imgEl) return;
+      items.forEach(function (it) { var pre = new Image(); pre.src = it.img; });
+      var i = 0;
+      setInterval(function () {
+        i = (i + 1) % items.length;
+        var it = items[i];
+        linkEl.href = it.href;
+        imgEl.src = it.img;
+        imgEl.alt = it.name;
+      }, 1000);
+    })();
+  </script>
 </body>
 
 </html>
