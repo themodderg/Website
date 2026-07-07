@@ -12,7 +12,7 @@
   <script src="//ezoicanalytics.com/analytics.js"></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gold Golem | More Golems Wiki</title>
+  <title>Castle Golem | More Golems Wiki</title>
 
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2592338544514821"
     crossorigin="anonymous"></script>
@@ -22,6 +22,19 @@
 
   <link rel="stylesheet" href="./src/css/sections.css">
   <link rel="icon" type="image/png" href="src/assets/images/logo.png">
+  <style>
+    .castle-elevation {
+      display: grid;
+      grid-template-columns: repeat(5, 3rem);
+      grid-template-rows: repeat(5, 3rem);
+      gap: 0.3rem;
+      padding: 0.5rem;
+      background: #23242a;
+      box-shadow:
+        inset 2px 2px 0 rgba(0, 0, 0, 0.55),
+        inset -2px -2px 0 rgba(255, 255, 255, 0.06);
+    }
+  </style>
 </head>
 
 <body>
@@ -96,6 +109,14 @@
               <a href="#behavior" class="mod-content-link">
                 <span class="mod-content-bullet"></span><span>Behavior</span>
               </a>
+              <ul class="mod-content-sublist">
+                <li>
+                  <a href="#castle-mode" class="mod-content-link">
+                    <span class="mod-content-bullet mod-content-bullet-sub"></span>
+                    <span>Castle Mode</span>
+                  </a>
+                </li>
+              </ul>
             </li>
             <li>
               <a href="#spawning" class="mod-content-link">
@@ -135,9 +156,9 @@
         </section>
 
         <aside class="lore-box lore-section item-infobox">
-          <h2 class="lore-section-title">Gold Golem</h2>
+          <h2 class="lore-section-title">Castle Golem</h2>
           <div class="item-infobox-image">
-            <img src="./src/assets/images/more_golems/icons/mobs_hero/gold_golem.png" alt="Gold Golem">
+            <img id="castle-hero-img" src="./src/assets/images/more_golems/icons/mobs_hero/castle_golem_a.png" alt="Castle Golem">
           </div>
           <dl class="item-stats">
             <dt>Type</dt>
@@ -145,17 +166,17 @@
             <dt>Temper</dt>
             <dd>Neutral</dd>
             <dt>Health</dt>
-            <dd>100 <img src="./src/assets/images/vanilla/heart.png" alt="" class="stat-icon"></dd>
+            <dd>240 <img src="./src/assets/images/vanilla/heart.png" alt="" class="stat-icon"></dd>
             <dt>Attack</dt>
-            <dd>24 <img src="./src/assets/images/vanilla/heart.png" alt="" class="stat-icon"></dd>
+            <dd>28 <img src="./src/assets/images/vanilla/heart.png" alt="" class="stat-icon"></dd>
             <dt>Knockback</dt>
             <dd>Immune</dd>
             <dt>Speed</dt>
-            <dd>0.25</dd>
+            <dd>0.20</dd>
             <dt>Spawn</dt>
-            <dd>Jungle</dd>
+            <dd>Plains</dd>
             <dt>ID</dt>
-            <dd><code>moregolems:gold_golem</code></dd>
+            <dd><code>moregolems:castle_golem</code></dd>
           </dl>
         </aside>
       </div>
@@ -165,16 +186,38 @@
         <h2 class="lore-section-title">Behavior</h2>
         <div class="lore-section-body">
           <p>
-            Gold Golems are village defenders. They wander around their village, chase down
-            hostile mobs and hit hard: 24 <img src="./src/assets/images/vanilla/heart.png" alt="" class="stat-icon"> attack damage per swing, immune to knockback. They
-            ignore Creepers and only turn on players who attack them first.
+            Castle Golems are the heaviest defenders in the mod: 240 <img src="./src/assets/images/vanilla/heart.png" alt="" class="stat-icon"> HP, 28 <img src="./src/assets/images/vanilla/heart.png" alt="" class="stat-icon"> attack damage, and
+            knockback immunity, wrapped around a wide slam that leaves dirt and campfire smoke
+            particles on impact. They wander their village at a slow 0.20 speed, ignore
+            Creepers, and only turn on players who attack them first.
           </p>
           <p>
-            During the day, if any hostile mob comes within 20 blocks, the Gold Golem winds up
-            a <strong>Solar Flare</strong>. After a short beacon-activate charge it releases a
-            flash that applies Slowness III for 5 seconds to every enemy in range and paints
-            them with lingering wax particles. Cooldown is 30 seconds. At night the ability
-            does not trigger.
+            They cannot be pushed. Anything that walks into their AoE gets nudged aside by
+            their own doPush.
+          </p>
+        </div>
+      </section>
+
+
+      <section id="castle-mode" class="lore-box lore-section">
+        <h2 class="lore-section-title">Castle Mode</h2>
+        <div class="lore-section-body">
+          <p>
+            The Castle Golem's signature ability is <strong>Castle Mode</strong>: it folds up
+            into a small stone fortress and roots itself in place. When it spawns naturally in
+            the world it wakes up already in castle form.
+          </p>
+          <p>
+            While castled, it beats a slow heartbeat sound every second and pulses a
+            50&nbsp;block aura that applies <strong>Mining Fatigue III</strong> for 5 seconds
+            to every non-owner, non-creative player in range. The aura refreshes every 2
+            seconds, so griefers around a village are stuck at that fatigue level for as long
+            as they stay close.
+          </p>
+          <p>
+            The castle scans a 15&nbsp;block radius for hostile mobs every half second. Any
+            enemy inside that ring, or a hit taken from a player, unfolds it back into its
+            mobile form so it can chase.
           </p>
         </div>
       </section>
@@ -184,9 +227,9 @@
         <h2 class="lore-section-title">Spawning</h2>
         <div class="lore-section-body">
           <p>
-            Gold Golems appear in two ways: they show up wherever a regular Iron Golem would
-            spawn in a Jungle biome, and they can also be built by hand anywhere by stacking a
-            Carved Pumpkin on top of an iron-golem-shaped body of Gold Blocks.
+            Castle Golems appear in two ways: they replace roughly one in three Iron Golem
+            spawns inside Plains and Sunflower Plains villages, and they can be built by hand
+            from a small castle-shaped structure crowned with a Carved Pumpkin.
           </p>
         </div>
       </section>
@@ -196,9 +239,10 @@
         <h2 class="lore-section-title">Natural Spawning</h2>
         <div class="lore-section-body">
           <p>
-            When a village or any structure attempts to spawn an Iron Golem inside the Jungle
-            biome, More Golems replaces it with a Gold Golem. Jungle villages defend themselves
-            with gilded guardians instead of the usual iron ones.
+            When a village attempts to spawn an Iron Golem in Plains or Sunflower Plains, the
+            mod rolls a 1-in-3 chance to swap it for a Castle Golem. The natural spawn drops
+            it into the world already in castle form, so villages get a stationary keep as
+            their default defender.
           </p>
         </div>
       </section>
@@ -208,48 +252,95 @@
         <h2 class="lore-section-title">Building</h2>
         <div class="lore-section-body">
           <p>
-            Build the same T-shape you would use for a vanilla Iron Golem, but out of Gold
-            Blocks: two blocks stacked for the body and legs, one block on either side of the
-            upper body for the arms, then a Carved Pumpkin (or Jack o'Lantern) on top. The
-            blocks are consumed and the golem spawns in place.
+            The build stack is a small castle. From the top: a Brick above a Carved Pumpkin
+            (or Jack o'Lantern), two Clay blocks and a Diamond Block below to form the main
+            keep. Two side towers 2 blocks out on either side (north/south or east/west) each
+            need one Brick over two Clay blocks. The gap between each side tower and the keep
+            needs one Clay block at the base to connect them.
+          </p>
+          <p>
+            The last block placed must be either the Carved Pumpkin on top of the keep column,
+            or a Brick placed directly above that pumpkin. When the pattern matches, every
+            block above is consumed and the golem spawns owned by the player who placed the
+            trigger block.
           </p>
         </div>
 
         <div class="lore-section-body recipe-body">
-          <div class="recipe-grid">
+          <div class="castle-elevation">
+            <div class="recipe-cell"></div>
+            <div class="recipe-cell"></div>
+            <div class="recipe-cell recipe-cell-filled" title="Bricks">
+              <img src="./src/assets/images/vanilla/bricks.png" alt="Bricks">
+            </div>
+            <div class="recipe-cell"></div>
+            <div class="recipe-cell"></div>
+
+            <div class="recipe-cell"></div>
             <div class="recipe-cell"></div>
             <div class="recipe-cell recipe-cell-filled" title="Carved Pumpkin">
               <img src="./src/assets/images/vanilla/carved_pumpkin.png" alt="Carved Pumpkin">
             </div>
             <div class="recipe-cell"></div>
-            <div class="recipe-cell recipe-cell-filled" title="Gold Block (arm)">
-              <img src="./src/assets/images/vanilla/gold_block.png" alt="Gold Block">
-            </div>
-            <div class="recipe-cell recipe-cell-filled" title="Gold Block (body)">
-              <img src="./src/assets/images/vanilla/gold_block.png" alt="Gold Block">
-            </div>
-            <div class="recipe-cell recipe-cell-filled" title="Gold Block (arm)">
-              <img src="./src/assets/images/vanilla/gold_block.png" alt="Gold Block">
+            <div class="recipe-cell"></div>
+
+            <div class="recipe-cell recipe-cell-filled" title="Bricks">
+              <img src="./src/assets/images/vanilla/bricks.png" alt="Bricks">
             </div>
             <div class="recipe-cell"></div>
-            <div class="recipe-cell recipe-cell-filled" title="Gold Block (legs)">
-              <img src="./src/assets/images/vanilla/gold_block.png" alt="Gold Block">
+            <div class="recipe-cell recipe-cell-filled" title="Clay">
+              <img src="./src/assets/images/vanilla/clay.png" alt="Clay">
             </div>
             <div class="recipe-cell"></div>
+            <div class="recipe-cell recipe-cell-filled" title="Bricks">
+              <img src="./src/assets/images/vanilla/bricks.png" alt="Bricks">
+            </div>
+
+            <div class="recipe-cell recipe-cell-filled" title="Clay">
+              <img src="./src/assets/images/vanilla/clay.png" alt="Clay">
+            </div>
+            <div class="recipe-cell"></div>
+            <div class="recipe-cell recipe-cell-filled" title="Clay">
+              <img src="./src/assets/images/vanilla/clay.png" alt="Clay">
+            </div>
+            <div class="recipe-cell"></div>
+            <div class="recipe-cell recipe-cell-filled" title="Clay">
+              <img src="./src/assets/images/vanilla/clay.png" alt="Clay">
+            </div>
+
+            <div class="recipe-cell recipe-cell-filled" title="Clay">
+              <img src="./src/assets/images/vanilla/clay.png" alt="Clay">
+            </div>
+            <div class="recipe-cell recipe-cell-filled" title="Clay (connector)">
+              <img src="./src/assets/images/vanilla/clay.png" alt="Clay">
+            </div>
+            <div class="recipe-cell recipe-cell-filled" title="Diamond Block">
+              <img src="./src/assets/images/vanilla/diamond_block.png" alt="Diamond Block">
+            </div>
+            <div class="recipe-cell recipe-cell-filled" title="Clay (connector)">
+              <img src="./src/assets/images/vanilla/clay.png" alt="Clay">
+            </div>
+            <div class="recipe-cell recipe-cell-filled" title="Clay">
+              <img src="./src/assets/images/vanilla/clay.png" alt="Clay">
+            </div>
           </div>
 
           <div class="recipe-arrow"><i class="fa-solid fa-arrow-right"></i></div>
 
           <div class="recipe-result">
             <div class="recipe-cell recipe-cell-filled recipe-cell-result">
-              <img src="./src/assets/images/more_golems/icons/mobs/gold_golem.png" alt="Gold Golem">
+              <img src="./src/assets/images/more_golems/icons/mobs/castle_golem.png" alt="Castle Golem">
             </div>
           </div>
         </div>
 
+        <p class="recipe-note">Elevation view: keep column in the centre, side towers two blocks out, connectors at the base.</p>
+
         <ul class="recipe-legend">
           <li><img src="./src/assets/images/vanilla/carved_pumpkin.png" alt="" class="recipe-legend-icon"> Carved Pumpkin or Jack o'Lantern (1)</li>
-          <li><img src="./src/assets/images/vanilla/gold_block.png" alt="" class="recipe-legend-icon"> Gold Block (4: body, legs, two arms)</li>
+          <li><img src="./src/assets/images/vanilla/bricks.png" alt="" class="recipe-legend-icon"> Bricks (3)</li>
+          <li><img src="./src/assets/images/vanilla/clay.png" alt="" class="recipe-legend-icon"> Clay (8)</li>
+          <li><img src="./src/assets/images/vanilla/diamond_block.png" alt="" class="recipe-legend-icon"> Diamond Block (1)</li>
         </ul>
       </section>
 
@@ -258,8 +349,15 @@
         <h2 class="lore-section-title">Interactions</h2>
         <div class="lore-section-body">
           <p>
-            <strong>Gold Ingot (right-click):</strong> heals the golem for 25
-            <img src="./src/assets/images/vanilla/heart.png" alt="" class="stat-icon"> and consumes one ingot, up to full health.
+            <strong>Diamond (right-click):</strong> heals the golem for 40
+            <img src="./src/assets/images/vanilla/heart.png" alt="" class="stat-icon"> and consumes one diamond, up to full health.
+          </p>
+          <p>
+            <strong>Empty hand (right-click, owner only):</strong> toggles Castle Mode. From
+            the mobile form it folds into the castle over 83 ticks; from the castle it
+            unfolds over 109 ticks. Non-owners get a "Not your Golem!" hotbar message and
+            cannot toggle it. Creative players can toggle any Castle Golem regardless of
+            ownership.
           </p>
         </div>
       </section>
@@ -269,10 +367,11 @@
         <h2 class="lore-section-title">Drops</h2>
         <div class="lore-section-body">
           <p>
-            On death the golem drops 3 to 5 Gold Ingots.
+            On death the golem drops 3 to 6 Bricks and 1 to 3 Diamonds.
           </p>
           <ul class="recipe-legend">
-            <li><img src="./src/assets/images/vanilla/gold_ingot.png" alt="" class="recipe-legend-icon"> Gold Ingot (3&ndash;5)</li>
+            <li><img src="./src/assets/images/vanilla/bricks.png" alt="" class="recipe-legend-icon"> Bricks (3&ndash;6)</li>
+            <li><img src="./src/assets/images/vanilla/diamond.png" alt="" class="recipe-legend-icon"> Diamond (1&ndash;3)</li>
           </ul>
         </div>
       </section>
@@ -283,7 +382,10 @@
         <div class="lore-section-body">
           <div class="gallery-grid">
             <figure class="gallery-item">
-              <img src="./src/assets/images/more_golems/gallery/gold_golem_1.png" alt="Gold Golem standing among bamboo in a jungle village">
+              <img src="./src/assets/images/more_golems/gallery/castle_golem_1.png" alt="Castle Golem unfolding at night with aurora sky">
+            </figure>
+            <figure class="gallery-item">
+              <img src="./src/assets/images/more_golems/gallery/castle_golem_2.png" alt="Castle Golem in castle mode outside a plains village gate">
             </figure>
           </div>
         </div>
@@ -341,6 +443,21 @@
           document.body.style.overflow = 'hidden';
         });
       });
+    })();
+
+    (function () {
+      var frames = [
+        './src/assets/images/more_golems/icons/mobs_hero/castle_golem_a.png',
+        './src/assets/images/more_golems/icons/mobs_hero/castle_golem_b.png'
+      ];
+      var el = document.getElementById('castle-hero-img');
+      if (!el) return;
+      frames.forEach(function (f) { var pre = new Image(); pre.src = f; });
+      var i = 0;
+      setInterval(function () {
+        i = (i + 1) % frames.length;
+        el.src = frames[i];
+      }, 1500);
     })();
   </script>
 </body>

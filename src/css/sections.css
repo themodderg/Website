@@ -1500,6 +1500,12 @@ footer {
   }
 }
 
+.wiki-detail .item-infobox-image img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
 .item-toc-list {
   list-style: none;
   margin: 0;
