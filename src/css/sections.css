@@ -661,20 +661,32 @@ a {
 }
 
 .project-tag {
-  background-color: var(--color-primary);
-  color: var(--color-text);
-  border: 1px solid var(--color-secondary-selected);
-  border-radius: 2px;
-  padding: 0.22rem 0.62rem;
-  font-size: clamp(0.72rem, 0.95vw, 0.79rem);
+  --bevel-hi: rgba(255, 255, 255, 0.10);
+  --bevel-lo: rgba(0, 0, 0, 0.55);
+  background: var(--color-primary);
+  color: #ece7e0;
+  border: 0;
+  border-radius: 0;
+  padding: 0.28rem 0.6rem;
+  font-size: clamp(0.68rem, 0.9vw, 0.74rem);
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.7);
   white-space: nowrap;
   flex-shrink: 0;
-  transition: background-color 0.2s ease, border-color 0.2s ease;
+  box-shadow:
+    inset 2px 2px 0 var(--bevel-hi),
+    inset -2px -2px 0 var(--bevel-lo);
+  transition: background-color 0.15s ease, box-shadow 0.08s ease, transform 0.08s ease;
 }
 
 .project-button:hover .project-tag {
-  background-color: var(--color-primary);
-  border-color: var(--color-secondary-selected);
+  background: var(--color-primary);
+  box-shadow:
+    inset -2px -2px 0 var(--bevel-hi),
+    inset 2px 2px 0 var(--bevel-lo);
+  transform: translateY(1px);
 }
 
 .mob-pic {
