@@ -1494,12 +1494,12 @@ footer {
   }
 
   .item-toc {
-    flex: 1 1 60%;
+    flex: 0 0 70%;
   }
 
   .item-infobox {
-    flex: 0 0 22rem;
-    max-width: 22rem;
+    flex: 0 0 calc(30% - 1rem);
+    max-width: calc(30% - 1rem);
   }
 
   .wiki-detail .item-overview { justify-content: space-between; }
@@ -1572,6 +1572,16 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-self: stretch;
+}
+
+@media (min-width: 1280px) {
+  .mobs-overview {
+    align-items: stretch;
+  }
+  .mobs-overview .item-toc {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .items-rotator .items-rotator-image {
