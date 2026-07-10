@@ -242,6 +242,20 @@ document.addEventListener("keydown", (event) => {
   }
 });
 
+function formatDownloadCount(raw) {
+  if (!raw) return raw;
+  const trimmed = String(raw).trim();
+  const numMatch = trimmed.match(/^([\d.]+)\s*([kKmM]?)/);
+  if (!numMatch) return trimmed;
+  const value = parseFloat(numMatch[1]);
+  const suffix = numMatch[2].toUpperCase();
+  if (!Number.isFinite(value)) return trimmed;
+  if (suffix) return `${value}${suffix}`;
+  if (value >= 1_000_000) return `${(value / 1_000_000).toFixed(1).replace(/\.0$/, "")}M`;
+  if (value >= 1_000) return `${(value / 1_000).toFixed(1).replace(/\.0$/, "")}K`;
+  return String(Math.round(value));
+}
+
 function parseBadgeCount(svgText) {
   const titleMatch = svgText.match(/<title>([^<]+)<\/title>/i);
   if (!titleMatch || !titleMatch[1]) {
@@ -301,7 +315,7 @@ function syncHeroDownloadCounts() {
         return;
       }
 
-      subtitle.textContent = `${count} downloads`;
+      subtitle.textContent = formatDownloadCount(count);
     } catch (_error) {
       // Keep static subtitle fallback if the count endpoint cannot be reached.
     }

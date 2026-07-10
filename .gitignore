@@ -1,1 +1,4 @@
 Dockerfile
+.wrangler/
+.playwright-mcp/
+run.sh
