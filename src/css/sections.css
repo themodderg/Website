@@ -52,7 +52,18 @@ html {
 #tipped-darts,
 #usage,
 #stages,
-#mob-drops {
+#mob-drops,
+#smithing,
+#brewing,
+#loot,
+#hero-box,
+#behavior,
+#spawning,
+#natural,
+#building,
+#interactions,
+#drops,
+#gallery {
   scroll-margin-top: 1rem;
 }
 
@@ -1013,6 +1024,10 @@ a.hero-badge-card:hover {
   margin-bottom: 0;
 }
 
+.content-lists .item-overview {
+  margin-bottom: 0;
+}
+
 .mod-content-intro {
   margin: 0 0 0.9rem;
   color: var(--color-text);
@@ -1351,6 +1366,49 @@ footer {
   height: 4.5rem;
 }
 
+.smithing-row {
+  display: grid;
+  grid-template-columns: repeat(3, 3rem);
+  grid-template-rows: 3rem auto;
+  column-gap: 0.5rem;
+  row-gap: 0.35rem;
+  padding: 0.6rem 0.7rem;
+  background: #23242a;
+  box-shadow:
+    inset 2px 2px 0 rgba(0, 0, 0, 0.55),
+    inset -2px -2px 0 rgba(255, 255, 255, 0.06);
+}
+
+.smithing-label {
+  font-family: 'Courier New', 'Consolas', monospace;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--color-text);
+  opacity: 0.75;
+  text-align: center;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.7);
+}
+
+.brewing-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.15rem;
+  padding: 0.6rem 0.8rem;
+  background: #23242a;
+  box-shadow:
+    inset 2px 2px 0 rgba(0, 0, 0, 0.55),
+    inset -2px -2px 0 rgba(255, 255, 255, 0.06);
+}
+
+.brewing-connector {
+  width: 2px;
+  height: 1rem;
+  background: rgba(255, 255, 255, 0.18);
+}
+
 .build-stack-label {
   font-family: 'Courier New', 'Consolas', monospace;
   font-size: 0.7rem;
@@ -1595,6 +1653,21 @@ footer {
   height: 90%;
   object-fit: contain;
   image-rendering: pixelated;
+}
+
+.easter-eggs-section {
+  width: 100%;
+  align-self: stretch;
+}
+
+.easter-eggs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 0.75rem 1.25rem;
+}
+
+.easter-eggs-grid li {
+  min-width: 0;
 }
 
 .item-stats {
