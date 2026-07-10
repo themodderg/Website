@@ -20,6 +20,7 @@ const projects = [
   {
     title: "Companions!", desc: "Mod that adds tameable mobs and a boss.", link: "https://www.curseforge.com/minecraft/mc-mods/companions-mod",
     img: "./src/assets/images/co_logo.png", hoverImg: "./src/assets/images/companions/render.png", color: "co-text",
+    banner: "./src/assets/images/companions/moty_2025.png", bannerAlt: "Mod of the Year 2025 Winner",
     tags: ["Forge", "NeoForge", "Fabric", "1.20", "1.21", "MOTY"]
   },
 
@@ -76,7 +77,8 @@ function attachProjectTagWheelScrolling() {
 
 function renderProjects(projectsToRender) {
   projectsContainer.innerHTML = projectsToRender.map(p => `
-    <a href="${p.link}" class="secondary-button project-button">
+    <a href="${p.link}" class="secondary-button project-button${p.banner ? ' has-banner' : ''}">
+      ${p.banner ? `<img src="${p.banner}" alt="${p.bannerAlt || ''}" class="project-banner">` : ''}
       <div class="project-top-row">
         <div class="project-image-box">
           ${p.hoverImg ? `<img src="${p.hoverImg}" alt="" aria-hidden="true" class="project-hover-image">` : ''}
