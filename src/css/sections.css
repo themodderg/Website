@@ -1776,7 +1776,6 @@ footer {
   width: 0.85rem;
   height: 0.85rem;
   flex-shrink: 0;
-  border-radius: 999px;
   background: var(--color-special);
   box-shadow:
     inset 1px 1px 0 rgba(255, 255, 255, 0.15),
