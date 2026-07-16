@@ -12,7 +12,7 @@
   <script src="//ezoicanalytics.com/analytics.js"></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mini P.E.K.K.A. | PEKKA Craft Wiki</title>
+  <title>Butterfly | PEKKA Craft Wiki</title>
 
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2592338544514821"
     crossorigin="anonymous"></script>
@@ -103,26 +103,6 @@
                 <span class="mod-content-bullet"></span>
                 <span>Spawning</span>
               </a>
-              <ul class="mod-content-sublist">
-                <li>
-                  <a href="#building" class="mod-content-link">
-                    <span class="mod-content-bullet mod-content-bullet-sub"></span>
-                    <span>Building</span>
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a href="#interactions" class="mod-content-link">
-                <span class="mod-content-bullet"></span>
-                <span>Interactions</span>
-              </a>
-            </li>
-            <li>
-              <a href="#drops" class="mod-content-link">
-                <span class="mod-content-bullet"></span>
-                <span>Drops</span>
-              </a>
             </li>
             <li>
               <a href="#gallery" class="mod-content-link">
@@ -134,25 +114,21 @@
         </section>
 
         <aside class="lore-box lore-section item-infobox">
-          <h2 class="lore-section-title">Mini P.E.K.K.A.</h2>
+          <h2 class="lore-section-title">Butterfly</h2>
           <div class="item-infobox-image">
-            <img src="./src/assets/images/pk_craft/icons/mobs_hero/mini_pekka.png" alt="Mini P.E.K.K.A.">
+            <img src="./src/assets/images/pk_craft/icons/mobs/butterfly.png" alt="Butterfly">
           </div>
           <dl class="item-stats">
             <dt>Type</dt>
-            <dd>Golem</dd>
+            <dd>Support entity</dd>
             <dt>Temper</dt>
-            <dd>Tame</dd>
-            <dt>Health</dt>
-            <dd>100 <img src="./src/assets/images/vanilla/heart.png" alt="" class="stat-icon"></dd>
-            <dt>Attack</dt>
-            <dd>18 <img src="./src/assets/images/vanilla/heart.png" alt="" class="stat-icon"></dd>
-            <dt>Speed</dt>
-            <dd>0.20</dd>
+            <dd>Non-combat</dd>
+            <dt>Lifetime</dt>
+            <dd>Until it reaches its P.E.K.K.A.</dd>
             <dt>Spawn</dt>
-            <dd>Built</dd>
+            <dd>Evolved P.E.K.K.A. kill</dd>
             <dt>ID</dt>
-            <dd><code>mpekka:m_pk</code></dd>
+            <dd><code>mpekka:butterfly</code></dd>
           </dl>
         </aside>
       </div>
@@ -162,15 +138,18 @@
         <h2 class="lore-section-title">Behavior</h2>
         <div class="lore-section-body">
           <p>
-            The Mini P.E.K.K.A. is a tamed melee companion. It follows its owner, sits on
-            command and retaliates against anything that attacks it or its owner. It ignores
-            fall damage and cannot be knocked back.
+            The Butterfly is a small non-living entity, not a mob: it has no health or
+            attack, cannot be attacked or targeted, and passes through blocks and other
+            entities (no physics). It exists purely to carry a lifesteal payload from a kill
+            back to the <a href="./pk_evolved_pekka.html" class="wiki-link">Evolved P.E.K.K.A.</a>
+            that earned it.
           </p>
           <p>
-            Attacks land in a 0.85&times;1.00&times;1.5 hitbox and deal 18
-            <img src="./src/assets/images/vanilla/heart.png" alt="" class="stat-icon"> per swing. Under the
-            <a href="./pk_rage_potion.html" class="wiki-link">Rage</a> effect its attack
-            speed goes up by 30%.
+            On spawn it rises straight up for 15 ticks, then hovers in place with a gentle
+            up-and-down bob for another 25 ticks, then flies directly toward its Evolved
+            P.E.K.K.A. When it reaches the golem, it delivers its stored heal and immediately
+            despawns. If its target dies or is unloaded before the Butterfly arrives, it
+            despawns without effect.
           </p>
         </div>
       </section>
@@ -180,97 +159,12 @@
         <h2 class="lore-section-title">Spawning</h2>
         <div class="lore-section-body">
           <p>
-            Mini P.E.K.K.A.s do not spawn naturally. They are built by placing a
-            <a href="./pk_mini_pekka_head.html" class="wiki-link">Mini P.E.K.K.A. Head</a>
-            on an Iron Block and using a
-            <a href="./pk_pancake.html" class="wiki-link">Pancake</a> on the stack. The Mini
-            spawns tamed to whoever fed it the pancake.
+            A Butterfly cannot be summoned, crafted or built. One spawns automatically at the
+            position of any creature killed by an
+            <a href="./pk_evolved_pekka.html" class="wiki-link">Evolved P.E.K.K.A.</a>, carrying a
+            heal worth 3.5% to 15% of the golem's max health depending on the victim's own max
+            health (scaling between 6 and 100 HP victims).
           </p>
-        </div>
-      </section>
-
-
-      <section id="building" class="lore-box lore-section">
-        <h2 class="lore-section-title">Building</h2>
-        <div class="lore-section-body">
-          <p>
-            Stack a Mini P.E.K.K.A. Head on top of an Iron Block, then right-click the
-            stack with a Pancake. Both blocks are consumed, the pancake is eaten, and the
-            Mini drops in with an anvil thud and an enchant burst.
-          </p>
-        </div>
-
-        <div class="lore-section-body recipe-body">
-          <div class="build-stack">
-            <div class="recipe-cell recipe-cell-filled build-stack-cell" title="Mini P.E.K.K.A. Head">
-              <img src="./src/assets/images/pk_craft/icons/items/mini_pk_helmet.png" alt="Mini P.E.K.K.A. Head">
-            </div>
-            <div class="recipe-cell recipe-cell-filled build-stack-cell" title="Iron Block">
-              <img src="./src/assets/images/vanilla/iron_block.png" alt="Iron Block">
-            </div>
-          </div>
-
-          <div class="recipe-arrow"><i class="fa-solid fa-arrow-right"></i></div>
-
-          <div class="recipe-result">
-            <div class="recipe-cell recipe-cell-filled recipe-cell-result">
-              <img src="./src/assets/images/pk_craft/icons/mobs/mini_pekka.png" alt="Mini P.E.K.K.A.">
-            </div>
-          </div>
-        </div>
-
-        <ul class="recipe-legend">
-          <li><img src="./src/assets/images/pk_craft/icons/items/mini_pk_helmet.png" alt="" class="recipe-legend-icon"> Mini P.E.K.K.A. Head (1)</li>
-          <li><img src="./src/assets/images/vanilla/iron_block.png" alt="" class="recipe-legend-icon"> Iron Block (1)</li>
-          <li><img src="./src/assets/images/pk_craft/icons/items/pancake.png" alt="" class="recipe-legend-icon"> Pancake (1, used on the stack)</li>
-        </ul>
-      </section>
-
-
-      <section id="interactions" class="lore-box lore-section">
-        <h2 class="lore-section-title">Interactions</h2>
-        <div class="lore-section-body">
-          <p>
-            <strong>Empty hand (right-click):</strong> cycles through Follow, Sit and Wander
-            command modes.
-          </p>
-          <p>
-            <strong><a href="./pk_pancake.html" class="wiki-link">Pancake</a> (right-click):</strong>
-            heals the Mini for 2 <img src="./src/assets/images/vanilla/heart.png" alt="" class="stat-icon"> and consumes one pancake.
-            While the Hero form is charged, feeding a pancake instead triggers its ability
-            (see below).
-          </p>
-          <p>
-            <strong><a href="./pk_star_item.html" class="wiki-link">Star Item</a> (right-click):</strong>
-            promotes the Mini to Star level once it has scored 50 kills.
-          </p>
-          <p>
-            <strong><a href="./pk_hero_crystal.html" class="wiki-link">Hero Crystal</a> (right-click):</strong>
-            transforms the Mini into its
-            <a href="./pk_hero_pekka.html" class="wiki-link">Hero</a> form. In Hero mode
-            every hit builds one point of charge, up to 6. Once fully charged, feeding a
-            Pancake burns the charge to heal 40 <img src="./src/assets/images/vanilla/heart.png" alt="" class="stat-icon">, add 50% attack damage for 30 seconds
-            and grant a short invulnerability window at the start.
-          </p>
-          <p>
-            <strong>Rename to <em>pancakes</em>:</strong> swaps the Mini onto its Pancakes
-            skin and plays the pancakes jingle. The custom name itself is cleared, so the
-            skin sticks without a nameplate hanging above the golem.
-          </p>
-        </div>
-      </section>
-
-
-      <section id="drops" class="lore-box lore-section">
-        <h2 class="lore-section-title">Drops</h2>
-        <div class="lore-section-body">
-          <p>
-            On death the Mini P.E.K.K.A. always drops a
-            <a href="./pk_mini_pekka_head.html" class="wiki-link">Mini P.E.K.K.A. Head</a>.
-          </p>
-          <ul class="recipe-legend">
-            <li><img src="./src/assets/images/pk_craft/icons/items/mini_pk_helmet.png" alt="" class="recipe-legend-icon"> Mini P.E.K.K.A. Head (1)</li>
-          </ul>
         </div>
       </section>
 
@@ -280,16 +174,7 @@
         <div class="lore-section-body">
           <div class="gallery-grid">
             <figure class="gallery-item">
-              <img src="./src/assets/images/pk_craft/icons/mobs_hero/mini_pekka.png" alt="Mini P.E.K.K.A. isometric render">
-            </figure>
-            <figure class="gallery-item">
-              <img src="./src/assets/images/pk_craft/icons/mobs_hero/star_mini_pekka.png" alt="Star Mini P.E.K.K.A. isometric render">
-            </figure>
-            <figure class="gallery-item">
-              <img src="./src/assets/images/pk_craft/icons/mobs_hero/mini_pekka_pancakes.png" alt="Mini P.E.K.K.A. wearing the Pancakes skin">
-            </figure>
-            <figure class="gallery-item">
-              <img src="./src/assets/images/pk_craft/icons/mobs_hero/hero_pekka.png" alt="Hero P.E.K.K.A. isometric render">
+              <img src="./src/assets/images/pk_craft/icons/mobs/butterfly.png" alt="Butterfly render">
             </figure>
           </div>
         </div>

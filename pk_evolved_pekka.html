@@ -12,7 +12,7 @@
   <script src="//ezoicanalytics.com/analytics.js"></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mini P.E.K.K.A. | PEKKA Craft Wiki</title>
+  <title>Evolved P.E.K.K.A. | PEKKA Craft Wiki</title>
 
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2592338544514821"
     crossorigin="anonymous"></script>
@@ -103,14 +103,6 @@
                 <span class="mod-content-bullet"></span>
                 <span>Spawning</span>
               </a>
-              <ul class="mod-content-sublist">
-                <li>
-                  <a href="#building" class="mod-content-link">
-                    <span class="mod-content-bullet mod-content-bullet-sub"></span>
-                    <span>Building</span>
-                  </a>
-                </li>
-              </ul>
             </li>
             <li>
               <a href="#interactions" class="mod-content-link">
@@ -134,9 +126,9 @@
         </section>
 
         <aside class="lore-box lore-section item-infobox">
-          <h2 class="lore-section-title">Mini P.E.K.K.A.</h2>
+          <h2 class="lore-section-title">Evolved P.E.K.K.A.</h2>
           <div class="item-infobox-image">
-            <img src="./src/assets/images/pk_craft/icons/mobs_hero/mini_pekka.png" alt="Mini P.E.K.K.A.">
+            <img src="./src/assets/images/pk_craft/icons/mobs_hero/evolved_pekka.png" alt="Evolved P.E.K.K.A.">
           </div>
           <dl class="item-stats">
             <dt>Type</dt>
@@ -144,15 +136,15 @@
             <dt>Temper</dt>
             <dd>Tame</dd>
             <dt>Health</dt>
-            <dd>100 <img src="./src/assets/images/vanilla/heart.png" alt="" class="stat-icon"></dd>
+            <dd>200 <img src="./src/assets/images/vanilla/heart.png" alt="" class="stat-icon"></dd>
             <dt>Attack</dt>
-            <dd>18 <img src="./src/assets/images/vanilla/heart.png" alt="" class="stat-icon"></dd>
+            <dd>30 <img src="./src/assets/images/vanilla/heart.png" alt="" class="stat-icon"></dd>
             <dt>Speed</dt>
-            <dd>0.20</dd>
+            <dd>0.18</dd>
             <dt>Spawn</dt>
-            <dd>Built</dd>
+            <dd>Evolution</dd>
             <dt>ID</dt>
-            <dd><code>mpekka:m_pk</code></dd>
+            <dd><code>mpekka:pekka</code></dd>
           </dl>
         </aside>
       </div>
@@ -162,15 +154,20 @@
         <h2 class="lore-section-title">Behavior</h2>
         <div class="lore-section-body">
           <p>
-            The Mini P.E.K.K.A. is a tamed melee companion. It follows its owner, sits on
-            command and retaliates against anything that attacks it or its owner. It ignores
-            fall damage and cannot be knocked back.
+            Evolved P.E.K.K.A. is not a separate mob. It is the
+            <a href="./pk_pekka.html" class="wiki-link">P.E.K.K.A.</a> entity switched into
+            its Evo form, and it keeps the same base health, attack and command behavior
+            (Follow, Sit, Wander). The transformation swaps its model, ambient sound, step
+            sound and attack sound, and grants a passive lifesteal ability: every kill spawns
+            a <a href="./pk_butterfly.html" class="wiki-link">Butterfly</a>.
           </p>
           <p>
-            Attacks land in a 0.85&times;1.00&times;1.5 hitbox and deal 18
-            <img src="./src/assets/images/vanilla/heart.png" alt="" class="stat-icon"> per swing. Under the
-            <a href="./pk_rage_potion.html" class="wiki-link">Rage</a> effect its attack
-            speed goes up by 30%.
+            The Butterfly flies back to the Evolved P.E.K.K.A. and heals it for 3.5% to 15%
+            of its max health, scaling with the victim's max health (interpolated between 6
+            and 100 HP victims). Any healing beyond missing health is banked as absorption
+            (a shield), capped at 50% of the golem's max health, so an Evolved P.E.K.K.A. can
+            sit above its 200 <img src="./src/assets/images/vanilla/heart.png" alt="" class="stat-icon"> pool with up to 100
+            <img src="./src/assets/images/vanilla/heart.png" alt="" class="stat-icon"> of absorption banked from kills.
           </p>
         </div>
       </section>
@@ -180,50 +177,19 @@
         <h2 class="lore-section-title">Spawning</h2>
         <div class="lore-section-body">
           <p>
-            Mini P.E.K.K.A.s do not spawn naturally. They are built by placing a
-            <a href="./pk_mini_pekka_head.html" class="wiki-link">Mini P.E.K.K.A. Head</a>
-            on an Iron Block and using a
-            <a href="./pk_pancake.html" class="wiki-link">Pancake</a> on the stack. The Mini
-            spawns tamed to whoever fed it the pancake.
+            Evolved P.E.K.K.A. cannot be built or found directly. Right-click a tamed
+            <a href="./pk_pekka.html" class="wiki-link">P.E.K.K.A.</a> with an
+            <a href="./pk_evo_crystal.html" class="wiki-link">Evolution Crystal</a> to switch it
+            into Evo form permanently; the crystal is consumed on use (outside creative).
           </p>
-        </div>
-      </section>
-
-
-      <section id="building" class="lore-box lore-section">
-        <h2 class="lore-section-title">Building</h2>
-        <div class="lore-section-body">
           <p>
-            Stack a Mini P.E.K.K.A. Head on top of an Iron Block, then right-click the
-            stack with a Pancake. Both blocks are consumed, the pancake is eaten, and the
-            Mini drops in with an anvil thud and an enchant burst.
+            An Evolution Crystal is crafted shapeless from six
+            <a href="./pk_evo_fragment.html" class="wiki-link">Evo Fragments</a>. Evo Fragments
+            drop from the same loot pools as Hero Shards: dungeon, temple and nether fortress
+            chests (15&ndash;30% chance, 1&ndash;3 fragments), and end city, ancient city,
+            woodland mansion, bastion and stronghold chests (50% chance, 2&ndash;3 fragments).
           </p>
         </div>
-
-        <div class="lore-section-body recipe-body">
-          <div class="build-stack">
-            <div class="recipe-cell recipe-cell-filled build-stack-cell" title="Mini P.E.K.K.A. Head">
-              <img src="./src/assets/images/pk_craft/icons/items/mini_pk_helmet.png" alt="Mini P.E.K.K.A. Head">
-            </div>
-            <div class="recipe-cell recipe-cell-filled build-stack-cell" title="Iron Block">
-              <img src="./src/assets/images/vanilla/iron_block.png" alt="Iron Block">
-            </div>
-          </div>
-
-          <div class="recipe-arrow"><i class="fa-solid fa-arrow-right"></i></div>
-
-          <div class="recipe-result">
-            <div class="recipe-cell recipe-cell-filled recipe-cell-result">
-              <img src="./src/assets/images/pk_craft/icons/mobs/mini_pekka.png" alt="Mini P.E.K.K.A.">
-            </div>
-          </div>
-        </div>
-
-        <ul class="recipe-legend">
-          <li><img src="./src/assets/images/pk_craft/icons/items/mini_pk_helmet.png" alt="" class="recipe-legend-icon"> Mini P.E.K.K.A. Head (1)</li>
-          <li><img src="./src/assets/images/vanilla/iron_block.png" alt="" class="recipe-legend-icon"> Iron Block (1)</li>
-          <li><img src="./src/assets/images/pk_craft/icons/items/pancake.png" alt="" class="recipe-legend-icon"> Pancake (1, used on the stack)</li>
-        </ul>
       </section>
 
 
@@ -232,30 +198,21 @@
         <div class="lore-section-body">
           <p>
             <strong>Empty hand (right-click):</strong> cycles through Follow, Sit and Wander
-            command modes.
+            command modes, same as the base P.E.K.K.A.
           </p>
           <p>
-            <strong><a href="./pk_pancake.html" class="wiki-link">Pancake</a> (right-click):</strong>
-            heals the Mini for 2 <img src="./src/assets/images/vanilla/heart.png" alt="" class="stat-icon"> and consumes one pancake.
-            While the Hero form is charged, feeding a pancake instead triggers its ability
-            (see below).
+            <strong>Iron Ingot (right-click):</strong> heals the golem for 3
+            <img src="./src/assets/images/vanilla/heart.png" alt="" class="stat-icon"> and consumes one ingot, same as the base
+            P.E.K.K.A.
           </p>
           <p>
             <strong><a href="./pk_star_item.html" class="wiki-link">Star Item</a> (right-click):</strong>
-            promotes the Mini to Star level once it has scored 50 kills.
+            still available in Evo form once it has scored 50 kills, layering the golden
+            Star look on top of Evo mode.
           </p>
           <p>
-            <strong><a href="./pk_hero_crystal.html" class="wiki-link">Hero Crystal</a> (right-click):</strong>
-            transforms the Mini into its
-            <a href="./pk_hero_pekka.html" class="wiki-link">Hero</a> form. In Hero mode
-            every hit builds one point of charge, up to 6. Once fully charged, feeding a
-            Pancake burns the charge to heal 40 <img src="./src/assets/images/vanilla/heart.png" alt="" class="stat-icon">, add 50% attack damage for 30 seconds
-            and grant a short invulnerability window at the start.
-          </p>
-          <p>
-            <strong>Rename to <em>pancakes</em>:</strong> swaps the Mini onto its Pancakes
-            skin and plays the pancakes jingle. The custom name itself is cleared, so the
-            skin sticks without a nameplate hanging above the golem.
+            <strong><a href="./pk_rage_potion.html" class="wiki-link">Rage</a> effect:</strong>
+            still applies its 30% attack speed boost on top of Evo mode.
           </p>
         </div>
       </section>
@@ -265,11 +222,12 @@
         <h2 class="lore-section-title">Drops</h2>
         <div class="lore-section-body">
           <p>
-            On death the Mini P.E.K.K.A. always drops a
-            <a href="./pk_mini_pekka_head.html" class="wiki-link">Mini P.E.K.K.A. Head</a>.
+            On death, Evolved P.E.K.K.A. always drops a
+            <a href="./pk_pekka_head.html" class="wiki-link">P.E.K.K.A. Head</a>, same as the
+            base golem. The Evo transformation itself is lost on death.
           </p>
           <ul class="recipe-legend">
-            <li><img src="./src/assets/images/pk_craft/icons/items/mini_pk_helmet.png" alt="" class="recipe-legend-icon"> Mini P.E.K.K.A. Head (1)</li>
+            <li><img src="./src/assets/images/pk_craft/icons/items/pekka_helmet.png" alt="" class="recipe-legend-icon"> P.E.K.K.A. Head (1)</li>
           </ul>
         </div>
       </section>
@@ -280,16 +238,7 @@
         <div class="lore-section-body">
           <div class="gallery-grid">
             <figure class="gallery-item">
-              <img src="./src/assets/images/pk_craft/icons/mobs_hero/mini_pekka.png" alt="Mini P.E.K.K.A. isometric render">
-            </figure>
-            <figure class="gallery-item">
-              <img src="./src/assets/images/pk_craft/icons/mobs_hero/star_mini_pekka.png" alt="Star Mini P.E.K.K.A. isometric render">
-            </figure>
-            <figure class="gallery-item">
-              <img src="./src/assets/images/pk_craft/icons/mobs_hero/mini_pekka_pancakes.png" alt="Mini P.E.K.K.A. wearing the Pancakes skin">
-            </figure>
-            <figure class="gallery-item">
-              <img src="./src/assets/images/pk_craft/icons/mobs_hero/hero_pekka.png" alt="Hero P.E.K.K.A. isometric render">
+              <img src="./src/assets/images/pk_craft/icons/mobs_hero/evolved_pekka.png" alt="Evolved P.E.K.K.A. isometric render">
             </figure>
           </div>
         </div>

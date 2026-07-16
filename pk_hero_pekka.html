@@ -12,7 +12,7 @@
   <script src="//ezoicanalytics.com/analytics.js"></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mini P.E.K.K.A. | PEKKA Craft Wiki</title>
+  <title>Hero Mini P.E.K.K.A. | PEKKA Craft Wiki</title>
 
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2592338544514821"
     crossorigin="anonymous"></script>
@@ -103,14 +103,6 @@
                 <span class="mod-content-bullet"></span>
                 <span>Spawning</span>
               </a>
-              <ul class="mod-content-sublist">
-                <li>
-                  <a href="#building" class="mod-content-link">
-                    <span class="mod-content-bullet mod-content-bullet-sub"></span>
-                    <span>Building</span>
-                  </a>
-                </li>
-              </ul>
             </li>
             <li>
               <a href="#interactions" class="mod-content-link">
@@ -134,9 +126,9 @@
         </section>
 
         <aside class="lore-box lore-section item-infobox">
-          <h2 class="lore-section-title">Mini P.E.K.K.A.</h2>
+          <h2 class="lore-section-title">Hero Mini P.E.K.K.A.</h2>
           <div class="item-infobox-image">
-            <img src="./src/assets/images/pk_craft/icons/mobs_hero/mini_pekka.png" alt="Mini P.E.K.K.A.">
+            <img src="./src/assets/images/pk_craft/icons/mobs_hero/hero_pekka.png" alt="Hero Mini P.E.K.K.A.">
           </div>
           <dl class="item-stats">
             <dt>Type</dt>
@@ -150,7 +142,7 @@
             <dt>Speed</dt>
             <dd>0.20</dd>
             <dt>Spawn</dt>
-            <dd>Built</dd>
+            <dd>Evolution</dd>
             <dt>ID</dt>
             <dd><code>mpekka:m_pk</code></dd>
           </dl>
@@ -162,15 +154,17 @@
         <h2 class="lore-section-title">Behavior</h2>
         <div class="lore-section-body">
           <p>
-            The Mini P.E.K.K.A. is a tamed melee companion. It follows its owner, sits on
-            command and retaliates against anything that attacks it or its owner. It ignores
-            fall damage and cannot be knocked back.
+            Hero Mini P.E.K.K.A. is not a separate mob. It is the
+            <a href="./pk_mini_pekka.html" class="wiki-link">Mini P.E.K.K.A.</a> entity
+            switched into its Hero form, and it keeps the same base health, attack and
+            command behavior (Follow, Sit, Wander). The transformation only swaps its
+            model, sounds and combo, and unlocks a charge-and-release ability.
           </p>
           <p>
-            Attacks land in a 0.85&times;1.00&times;1.5 hitbox and deal 18
-            <img src="./src/assets/images/vanilla/heart.png" alt="" class="stat-icon"> per swing. Under the
-            <a href="./pk_rage_potion.html" class="wiki-link">Rage</a> effect its attack
-            speed goes up by 30%.
+            Every hit that lands while in Hero form fills one point of a 6-point charge
+            meter. Attacks alternate between two swings on a 2-hit combo, an 18-tick
+            swing and a slower 23-tick swing, instead of the base Mini's single attack
+            pattern.
           </p>
         </div>
       </section>
@@ -180,50 +174,20 @@
         <h2 class="lore-section-title">Spawning</h2>
         <div class="lore-section-body">
           <p>
-            Mini P.E.K.K.A.s do not spawn naturally. They are built by placing a
-            <a href="./pk_mini_pekka_head.html" class="wiki-link">Mini P.E.K.K.A. Head</a>
-            on an Iron Block and using a
-            <a href="./pk_pancake.html" class="wiki-link">Pancake</a> on the stack. The Mini
-            spawns tamed to whoever fed it the pancake.
+            Hero Mini P.E.K.K.A. cannot be built or found directly. Right-click a tamed
+            <a href="./pk_mini_pekka.html" class="wiki-link">Mini P.E.K.K.A.</a> with a
+            <a href="./pk_hero_crystal.html" class="wiki-link">Hero Crystal</a> to switch it
+            into Hero form permanently; the crystal is consumed on use (outside creative).
           </p>
-        </div>
-      </section>
-
-
-      <section id="building" class="lore-box lore-section">
-        <h2 class="lore-section-title">Building</h2>
-        <div class="lore-section-body">
           <p>
-            Stack a Mini P.E.K.K.A. Head on top of an Iron Block, then right-click the
-            stack with a Pancake. Both blocks are consumed, the pancake is eaten, and the
-            Mini drops in with an anvil thud and an enchant burst.
+            A Hero Crystal is crafted from four
+            <a href="./pk_hero_shards_big.html" class="wiki-link">Big Hero Shards</a> around a
+            Gold Block. Big Hero Shards are the rarest reward from opening a
+            <a href="./pk_hero_box.html" class="wiki-link">Hero Box</a>, which itself drops at a
+            10&ndash;45% chance from dungeon, temple, nether fortress, end city, ancient city,
+            woodland mansion, bastion and stronghold chests.
           </p>
         </div>
-
-        <div class="lore-section-body recipe-body">
-          <div class="build-stack">
-            <div class="recipe-cell recipe-cell-filled build-stack-cell" title="Mini P.E.K.K.A. Head">
-              <img src="./src/assets/images/pk_craft/icons/items/mini_pk_helmet.png" alt="Mini P.E.K.K.A. Head">
-            </div>
-            <div class="recipe-cell recipe-cell-filled build-stack-cell" title="Iron Block">
-              <img src="./src/assets/images/vanilla/iron_block.png" alt="Iron Block">
-            </div>
-          </div>
-
-          <div class="recipe-arrow"><i class="fa-solid fa-arrow-right"></i></div>
-
-          <div class="recipe-result">
-            <div class="recipe-cell recipe-cell-filled recipe-cell-result">
-              <img src="./src/assets/images/pk_craft/icons/mobs/mini_pekka.png" alt="Mini P.E.K.K.A.">
-            </div>
-          </div>
-        </div>
-
-        <ul class="recipe-legend">
-          <li><img src="./src/assets/images/pk_craft/icons/items/mini_pk_helmet.png" alt="" class="recipe-legend-icon"> Mini P.E.K.K.A. Head (1)</li>
-          <li><img src="./src/assets/images/vanilla/iron_block.png" alt="" class="recipe-legend-icon"> Iron Block (1)</li>
-          <li><img src="./src/assets/images/pk_craft/icons/items/pancake.png" alt="" class="recipe-legend-icon"> Pancake (1, used on the stack)</li>
-        </ul>
       </section>
 
 
@@ -232,30 +196,26 @@
         <div class="lore-section-body">
           <p>
             <strong>Empty hand (right-click):</strong> cycles through Follow, Sit and Wander
-            command modes.
+            command modes, same as the base Mini.
           </p>
           <p>
             <strong><a href="./pk_pancake.html" class="wiki-link">Pancake</a> (right-click):</strong>
-            heals the Mini for 2 <img src="./src/assets/images/vanilla/heart.png" alt="" class="stat-icon"> and consumes one pancake.
-            While the Hero form is charged, feeding a pancake instead triggers its ability
-            (see below).
+            while the charge meter is below 6, heals 2
+            <img src="./src/assets/images/vanilla/heart.png" alt="" class="stat-icon"> per pancake like the base Mini. Once
+            the meter is full, feeding a Pancake instead burns the charge to trigger the
+            Hero ability: heal 40
+            <img src="./src/assets/images/vanilla/heart.png" alt="" class="stat-icon"> (40% of max health), add 50% attack
+            damage for 30 seconds, and grant a short invulnerability window at the start of
+            the buff.
           </p>
           <p>
             <strong><a href="./pk_star_item.html" class="wiki-link">Star Item</a> (right-click):</strong>
-            promotes the Mini to Star level once it has scored 50 kills.
+            still available in Hero form once it has scored 50 kills, layering the golden
+            Star look on top of Hero mode.
           </p>
           <p>
-            <strong><a href="./pk_hero_crystal.html" class="wiki-link">Hero Crystal</a> (right-click):</strong>
-            transforms the Mini into its
-            <a href="./pk_hero_pekka.html" class="wiki-link">Hero</a> form. In Hero mode
-            every hit builds one point of charge, up to 6. Once fully charged, feeding a
-            Pancake burns the charge to heal 40 <img src="./src/assets/images/vanilla/heart.png" alt="" class="stat-icon">, add 50% attack damage for 30 seconds
-            and grant a short invulnerability window at the start.
-          </p>
-          <p>
-            <strong>Rename to <em>pancakes</em>:</strong> swaps the Mini onto its Pancakes
-            skin and plays the pancakes jingle. The custom name itself is cleared, so the
-            skin sticks without a nameplate hanging above the golem.
+            <strong>Rename to <em>pancakes</em>:</strong> swaps the Hero onto its Pancakes
+            skin variant, same as the base Mini.
           </p>
         </div>
       </section>
@@ -265,8 +225,9 @@
         <h2 class="lore-section-title">Drops</h2>
         <div class="lore-section-body">
           <p>
-            On death the Mini P.E.K.K.A. always drops a
-            <a href="./pk_mini_pekka_head.html" class="wiki-link">Mini P.E.K.K.A. Head</a>.
+            On death, Hero Mini P.E.K.K.A. always drops a
+            <a href="./pk_mini_pekka_head.html" class="wiki-link">Mini P.E.K.K.A. Head</a>, same
+            as the base Mini. The Hero transformation itself is lost on death.
           </p>
           <ul class="recipe-legend">
             <li><img src="./src/assets/images/pk_craft/icons/items/mini_pk_helmet.png" alt="" class="recipe-legend-icon"> Mini P.E.K.K.A. Head (1)</li>
@@ -280,16 +241,7 @@
         <div class="lore-section-body">
           <div class="gallery-grid">
             <figure class="gallery-item">
-              <img src="./src/assets/images/pk_craft/icons/mobs_hero/mini_pekka.png" alt="Mini P.E.K.K.A. isometric render">
-            </figure>
-            <figure class="gallery-item">
-              <img src="./src/assets/images/pk_craft/icons/mobs_hero/star_mini_pekka.png" alt="Star Mini P.E.K.K.A. isometric render">
-            </figure>
-            <figure class="gallery-item">
-              <img src="./src/assets/images/pk_craft/icons/mobs_hero/mini_pekka_pancakes.png" alt="Mini P.E.K.K.A. wearing the Pancakes skin">
-            </figure>
-            <figure class="gallery-item">
-              <img src="./src/assets/images/pk_craft/icons/mobs_hero/hero_pekka.png" alt="Hero P.E.K.K.A. isometric render">
+              <img src="./src/assets/images/pk_craft/icons/mobs_hero/hero_pekka.png" alt="Hero Mini P.E.K.K.A. isometric render">
             </figure>
           </div>
         </div>
