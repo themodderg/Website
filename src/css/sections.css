@@ -983,6 +983,39 @@ a.hero-badge-card:hover {
   margin-top: 1rem;
 }
 
+.lore-bullet-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.lore-section-body p + .lore-bullet-list,
+.lore-section-body .lore-bullet-list + p {
+  margin-top: 1rem;
+}
+
+.lore-bullet-list li {
+  position: relative;
+  padding-left: 1.15rem;
+}
+
+.lore-bullet-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.5em;
+  width: 0.5rem;
+  height: 0.5rem;
+  background: var(--color-special);
+  box-shadow:
+    inset 1px 1px 0 rgba(255, 255, 255, 0.15),
+    inset -1px -1px 0 rgba(0, 0, 0, 0.55),
+    0 0 0 1px rgba(0, 0, 0, 0.4);
+}
+
 .mod-content-list {
   list-style: none;
   margin: 0;
