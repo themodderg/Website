@@ -1,9 +1,7 @@
 document.getElementById("td-lore").innerHTML = `
-    <p class="font-bold" style="font-size: 2vh;">
-      <span class="td-text">The Digimod</span> is a Minecraft mod that adds Minecraft style modeled
-       <span class="text-special">Digimon</span>
-       to your world which you will be able to <span class="text-orange">rise</span>,
-        <span class="text-orange">train</span> and <span class="text-orange">fight</span> with.
+    <p>
+      The Digimod is a Minecraft mod that adds Minecraft style modeled Digimon to your world,
+      which you will be able to rise, train and fight with.
     </p>
   `;
 

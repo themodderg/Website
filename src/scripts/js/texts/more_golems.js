@@ -1,7 +1,7 @@
 document.getElementById("mg-lore").innerHTML = `
-    <p class="font-bold" style="font-size: 2vh;">
-      <span class="mg-text">More Golems</span> Minecraft mod that adds 
-      <span class="text-special">more golem mobs</span> that spawn and can be built into to the world, with useful and creative weapons.
+    <p>
+      More Golems is a Minecraft mod that adds more golem mobs that spawn and can be built into
+      the world, with useful and creative weapons.
     </p>
       `;
       
