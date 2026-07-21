@@ -1,10 +1,3 @@
-document.getElementById("pk-lore").innerHTML = `
-    <p class="font-bold" style="font-size: 2vh;">
-      <span class="td-text">P.E.K.K.A. Craft</span> Minecraft mod that adds 
-      <span class="text-special">Mini P.E.K.K.A</span> from Clash Royale as a mob into to the world, along related equipment and pancakes. The <span class="text-special">Crystals</span> are crafted with <span class="text-special">Crystal Pieces</span> that are found around the world on dungeons.
-    </p>
-  `;
-
 document.getElementById("pancakes-lore").innerHTML = `
     <p class="font-bold" style="font-size: 2vh;">
       Craft a <span class="td-text">Mini P.E.K.K.A. Helmet</span> out of valuable material which you can either equip as gear equivalent to 
