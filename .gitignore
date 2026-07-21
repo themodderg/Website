@@ -2,3 +2,4 @@ Dockerfile
 .wrangler/
 .playwright-mcp/
 run.sh
+src/scripts/.td_digimon_cache/
