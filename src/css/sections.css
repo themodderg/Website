@@ -1703,6 +1703,60 @@ footer {
   image-rendering: pixelated;
 }
 
+@media (min-width: 1280px) {
+  .mobs-overview .items-rotator {
+    position: sticky;
+    top: 1.5rem;
+    align-self: flex-start;
+  }
+}
+
+.mobs-overview .lore-bullet-list li.mob-group-label {
+  list-style: none;
+  padding-left: 0;
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: #ece7e0;
+  margin-top: 1.25rem;
+  border-bottom: 1px solid var(--color-secondary-selected);
+  padding-bottom: 0.35rem;
+}
+
+.mobs-overview .lore-bullet-list li.mob-group-label:first-child {
+  margin-top: 0;
+}
+
+.mobs-overview .lore-bullet-list li.mob-group-label::before {
+  display: none;
+}
+
+.mobs-overview .lore-bullet-list li.mob-tier-label {
+  list-style: none;
+  padding-left: 0;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--color-special);
+  margin-top: 0.75rem;
+}
+
+.mobs-overview .lore-bullet-list li.mob-tier-label::before {
+  display: none;
+}
+
+.mobs-overview .lore-bullet-list li[data-idx] {
+  cursor: pointer;
+  transition: color 0.15s ease, transform 0.15s ease;
+}
+
+.mobs-overview .lore-bullet-list li[data-idx]:hover {
+  color: #ece7e0;
+  transform: translateX(2px);
+}
+
+.mobs-overview .items-rotator .items-rotator-image {
+  background: #15101e;
+}
+
 .easter-eggs-section {
   width: 100%;
   align-self: stretch;
