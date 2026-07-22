@@ -3,3 +3,4 @@ Dockerfile
 .playwright-mcp/
 run.sh
 src/scripts/.td_digimon_cache/
+src/scripts/__pycache__/

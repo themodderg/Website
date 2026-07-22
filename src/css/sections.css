@@ -1688,6 +1688,23 @@ footer {
     display: flex;
     flex-direction: column;
   }
+  /* Scroll the card list in its own box (matching the sticky rotator's
+     height) instead of the whole page, so hovering it and using the wheel
+     browses mobs without fighting page scroll. */
+  .mobs-overview .item-toc .lore-bullet-list {
+    max-height: calc(100vh - 8rem);
+    overflow-y: auto;
+    padding-right: 0.5rem;
+  }
+  .mobs-overview .item-toc .lore-bullet-list::-webkit-scrollbar {
+    width: 0.5rem;
+  }
+  .mobs-overview .item-toc .lore-bullet-list::-webkit-scrollbar-track {
+    background: var(--color-primary);
+  }
+  .mobs-overview .item-toc .lore-bullet-list::-webkit-scrollbar-thumb {
+    background: var(--color-secondary-selected);
+  }
 }
 
 .items-rotator .items-rotator-image {
