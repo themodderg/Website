@@ -1,0 +1,1 @@
+{"diet": "baby", "evolutions": {"algomonbaby2": {"conditions": {"always_can": "true"}}}, "xps": [7], "evo_stage": 0, "hitbox": {"width": 0.8, "height": 0.8}, "default_sp_move": "bullet", "anims": ["idle", "sit7", "walk6", "float", "attack2", "shoot4"], "movement_type": "flyer", "baby_digimon": ["algomon"], "egg_type": "nightmare"}

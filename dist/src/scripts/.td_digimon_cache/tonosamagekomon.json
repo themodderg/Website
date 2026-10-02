@@ -1,0 +1,1 @@
+{"profession": "lumberjack", "diet": "seafood", "xps": [3], "evo_stage": 4, "hitbox": {"width": 2.625, "height": 2.75}, "default_sp_move": "doctase", "anims": ["idle3", "sit2", "walk", "float2", "attack6", "shoot8"], "movement_type": "ground", "baby_digimon": ["botamon", "datirimon"]}

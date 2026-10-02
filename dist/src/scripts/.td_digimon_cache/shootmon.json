@@ -1,0 +1,1 @@
+{"profession": "lumberjack", "xps": [5], "evo_stage": 4, "hitbox": {"width": 1.2, "height": 2.0}, "default_sp_move": "mega_blaster", "anims": ["idle3", "sit6", "walk7", "fly6", "attack", "shoot9"], "movement_type": "ground", "baby_digimon": ["dokimon", "nyokimon", "zurumon"], "has_emissive_texture": true, "has_translucent_texture": true}

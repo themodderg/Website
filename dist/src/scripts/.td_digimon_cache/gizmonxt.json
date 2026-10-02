@@ -1,0 +1,1 @@
+{"profession": "miner", "xps": [7], "evo_stage": 4, "hitbox": {"width": 1.25, "height": 3.625}, "default_sp_move": "disc_attack", "anims": ["idle5", "sit14", "walk6", "float2", "attack11", "shoot6"], "movement_type": "flyer", "baby_digimon": ["algomon"]}

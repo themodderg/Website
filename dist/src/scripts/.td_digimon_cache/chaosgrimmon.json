@@ -1,0 +1,1 @@
+{"profession": "miner", "xps": [5], "evo_stage": 4, "hitbox": {"width": 1.65, "height": 4.1}, "default_sp_move": "mach_tornado", "anims": ["idle5", "sit7", "walk7", "float2", "attack8", "shoot"], "rider_offset": 0.75, "movement_type": "flyer", "baby_digimon": ["kuramon"], "has_emissive_texture": true, "has_translucent_texture": true}

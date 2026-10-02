@@ -1,0 +1,1 @@
+{"diet": "baby", "evolutions": {"jazamon": {"conditions": {"always_can": "true"}}, "sparrowmon": {"conditions": {"mood": "Joyful"}}}, "xps": [5], "evo_stage": 1, "hitbox": {"width": 1.25, "height": 1.125}, "default_sp_move": "bullet", "anims": ["idle", "sit", "float", "float", "attack", "shoot9"], "movement_type": "flyer", "baby_digimon": ["bommon"], "has_emissive_texture": true}

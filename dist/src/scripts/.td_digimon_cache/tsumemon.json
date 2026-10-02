@@ -1,0 +1,1 @@
+{"diet": "baby", "evolutions": {"keramon": {"conditions": {"always_can": "true"}}}, "xps": [7], "evo_stage": 1, "hitbox": {"width": 0.8, "height": 0.8}, "default_sp_move": "bullet", "anims": ["idle", "sit4", "walk10", "float", "attack", "shoot7"], "movement_type": "ground", "baby_digimon": ["kuramon"]}

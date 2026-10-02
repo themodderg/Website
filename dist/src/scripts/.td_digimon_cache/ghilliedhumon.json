@@ -1,0 +1,1 @@
+{"profession": "lumberjack", "diet": "botanic", "xps": [2], "evo_stage": 4, "hitbox": {"width": 2.625, "height": 2.75}, "default_sp_move": "x_attack", "anims": ["idle3", "sit2", "walk", "float2", "attack6", "shoot8"], "movement_type": "ground", "baby_digimon": ["algomon", "bommon", "botamon", "datirimon", "kuramon", "poyomon", "zurumon"], "has_emissive_texture": true}

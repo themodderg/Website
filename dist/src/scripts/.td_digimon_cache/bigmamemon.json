@@ -1,0 +1,1 @@
+{"diet": "scrap", "profession": "transporter", "xps": [5], "evo_stage": 4, "hitbox": {"width": 2.313, "height": 3.125}, "default_sp_move": "smiley_bomb", "anims": ["idle3", "sit4", "walk7", "float", "attack", "shoot2"], "movement_type": "flyer", "baby_digimon": ["dokimon", "zurumon"]}

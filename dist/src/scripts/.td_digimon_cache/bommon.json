@@ -1,0 +1,1 @@
+{"diet": "baby", "evolutions": {"missimon": {"conditions": {"always_can": "true"}}}, "xps": [5], "evo_stage": 0, "hitbox": {"width": 0.375, "height": 0.813}, "default_sp_move": "bullet", "anims": ["idle4", "sit11", "fly", "fly", "attack3", "shoot3"], "movement_type": "flyer", "baby_digimon": ["bommon"], "egg_type": "machine", "has_emissive_texture": true}

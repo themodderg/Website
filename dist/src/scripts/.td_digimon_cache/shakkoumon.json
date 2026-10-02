@@ -1,0 +1,1 @@
+{"profession": "farmer", "xps": [8, 6], "evo_stage": 4, "hitbox": {"width": 2.125, "height": 3.625}, "default_sp_move": "heavens_knuckle", "anims": ["idle2", "sit6", "walk", "float", "attack8", "shoot8"], "movement_type": "flyer", "baby_digimon": ["bommon", "poyomon"]}

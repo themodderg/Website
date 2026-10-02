@@ -1,0 +1,1 @@
+{"diet": "baby", "evolutions": {"palmon": {"conditions": {"always_can": "true"}}, "alraumon": {"conditions": {"mood": "Sad"}}}, "xps": [2], "evo_stage": 1, "hitbox": {"width": 1.0, "height": 1.0}, "default_sp_move": "bullet", "movement_type": "ground", "baby_digimon": ["yuramon"]}

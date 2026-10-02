@@ -1,0 +1,1 @@
+{"profession": "transporter", "diet": "scrap", "xps": [4, 5], "evo_stage": 4, "hitbox": {"width": 4.25, "height": 2.312}, "default_sp_move": "mega_blaster", "rider_offset": 0.1, "movement_type": "flyer", "baby_digimon": ["algomon", "bommon", "nyokimon"], "has_emissive_texture": true}

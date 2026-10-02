@@ -1,0 +1,1 @@
+{"diet": "seafood", "evolutions": {"piranimon": {"conditions": {"xp": ["3:400"]}}}, "xps": [3, 5], "evo_stage": 3, "hitbox": {"width": 2.562, "height": 1.063}, "default_sp_move": "giga_destroyer", "anims": ["idle5", "sit7", "float2", "float2", "attack", "shoot6"], "movement_type": "swimmer", "baby_digimon": ["botamon", "datirimon"]}

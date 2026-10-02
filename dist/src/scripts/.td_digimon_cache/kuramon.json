@@ -1,0 +1,1 @@
+{"diet": "baby", "evolutions": {"tsumemon": {"conditions": {"always_can": "true"}}, "arkadimon": {"conditions": {"mood": "Happy"}}}, "xps": [7], "evo_stage": 0, "hitbox": {"width": 0.6, "height": 0.6}, "default_sp_move": "bullet", "anims": ["idle", "sit2", "fly4", "fly4", "attack2", "shoot4"], "movement_type": "flyer", "baby_digimon": ["kuramon"]}

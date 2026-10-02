@@ -1,0 +1,1 @@
+{"profession": "transporter", "diet": "scrap", "xps": [5], "evo_stage": 4, "hitbox": {"width": 1.1, "height": 1.625}, "default_sp_move": "thunderbolt", "anims": ["idle9", "sit4", "walk", "float2", "attack7", "shoot2"], "movement_type": "ground", "baby_digimon": ["algomon"], "has_translucent_texture": true}

@@ -1,0 +1,1 @@
+{"diet": "botanic", "xps": [2, 7], "evolutions": {"pumpmon": {"conditions": {"mood": "Joyful", "max_mistakes": "10", "min_wins": "40", "xp": ["2:300", "7:100"]}}}, "evo_stage": 3, "hitbox": {"width": 1.375, "height": 2.063}, "default_sp_move": "mach_tornado", "profession": "farmer", "movement_type": "flyer", "baby_digimon": ["yuramon"]}

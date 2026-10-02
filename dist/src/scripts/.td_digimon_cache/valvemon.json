@@ -1,0 +1,1 @@
+{"diet": "scrap", "xps": [5], "evo_stage": 4, "hitbox": {"width": 4.25, "height": 4.437}, "default_sp_move": "mega_blaster", "anims": ["idle10", "sit7", "walk", "float2", "attack3", "shoot8"], "movement_type": "ground", "baby_digimon": ["bommon"]}

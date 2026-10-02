@@ -1,0 +1,1 @@
+{"profession": "farmer", "evolutions": {"piccolomon": {"conditions": {"mood": "Joyful", "max_mistakes": "15", "min_wins": "40", "xp": ["8:200", "4:200"]}}}, "xps": [8], "evo_stage": 3, "hitbox": {"width": 1.5, "height": 2}, "default_sp_move": "holy_shoot", "anims": ["idle10", "sit3", "walk7", "float", "attack11", "shoot"], "movement_type": "ground", "baby_digimon": ["yuramon"]}

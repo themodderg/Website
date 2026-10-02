@@ -1,0 +1,1 @@
+{"diet": "bug", "xps": [2, 0], "evo_stage": 4, "hitbox": {"width": 2.5, "height": 2.0}, "default_sp_move": "gatling_arm", "anims": ["idle6", "sit13", "walk7", "bug_fly", "attack11", "shoot6"], "movement_type": "ground", "baby_digimon": ["chicomon"]}

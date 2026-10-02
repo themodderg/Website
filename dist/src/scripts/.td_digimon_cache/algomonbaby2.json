@@ -1,0 +1,1 @@
+{"diet": "baby", "evolutions": {"algomonrookie": {"conditions": {"always_can": "true"}}, "protogizmon": {"conditions": {"mood": "Meh"}}}, "xps": [7], "evo_stage": 1, "hitbox": {"width": 1.0, "height": 1.1}, "default_sp_move": "bullet", "anims": ["idle", "sit7", "walk5", "float", "attack2", "shoot4"], "movement_type": "flyer", "baby_digimon": ["algomon"]}

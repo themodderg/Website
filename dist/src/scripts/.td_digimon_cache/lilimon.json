@@ -1,0 +1,1 @@
+{"profession": "tree_lover", "xps": [2, 4], "evo_stage": 4, "hitbox": {"width": 1.125, "height": 2.875}, "default_sp_move": "mach_tornado", "anims": ["idle6", "sit9", "walk7", "bug_fly", "attack8", "shoot"], "movement_type": "flyer", "baby_digimon": ["yuramon"]}

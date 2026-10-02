@@ -1,0 +1,1 @@
+{"diet": "botanic", "xps": [2, 0], "evo_stage": 4, "hitbox": {"width": 3.75, "height": 1.625}, "default_sp_move": "deadly_sting", "anims": ["idle6", "sit10", "walk7", "float2", "attack3", "shoot"], "movement_type": "ground", "baby_digimon": ["yuramon"]}

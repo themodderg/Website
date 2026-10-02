@@ -1,0 +1,1 @@
+{"profession": "farmer", "diet": "herbivore", "xps": [7, 2], "evo_stage": 4, "hitbox": {"width": 1.75, "height": 3.438}, "default_sp_move": "death_claw", "anims": ["idle5", "sit14", "walk6", "fly4", "attack5", "shoot5"], "movement_type": "ground", "baby_digimon": ["yuramon", "algomon", "kuramon"]}

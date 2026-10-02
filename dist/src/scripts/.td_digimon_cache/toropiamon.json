@@ -1,0 +1,1 @@
+{"profession": "lumberjack", "diet": "herbivore", "xps": [2, 0], "evo_stage": 4, "hitbox": {"width": 1.75, "height": 3.4}, "default_sp_move": "mach_tornado", "anims": ["idle5", "sit6", "walk7", "float", "attack8", "shoot"], "movement_type": "ground", "baby_digimon": ["yuramon"]}

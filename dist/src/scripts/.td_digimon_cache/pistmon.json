@@ -1,0 +1,1 @@
+{"profession": "transporter", "xps": [5, 2], "evo_stage": 4, "hitbox": {"width": 2.438, "height": 2.375}, "default_sp_move": "thunderbolt", "anims": ["idle", "sit11", "walk10", "float", "attack3", "shoot"], "movement_type": "ground", "baby_digimon": ["algomon", "dokimon", "kuramon"], "has_emissive_texture": true}

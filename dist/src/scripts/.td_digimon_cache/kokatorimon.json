@@ -1,0 +1,1 @@
+{"profession": "farmer", "xps": [4], "evo_stage": 3, "hitbox": {"width": 1.0, "height": 2.5}, "default_sp_move": "petit_twister", "anims": ["idle8", "sit6", "walk7", "fly", "attack5", "shoot"], "movement_type": "ground", "baby_digimon": []}

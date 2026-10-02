@@ -1,0 +1,1 @@
+{"diet": "baby", "evolutions": {"bemmon": {"conditions": {"always_can": "true"}}}, "xps": [7], "evo_stage": 1, "hitbox": {"width": 1.0, "height": 1.0}, "default_sp_move": "bullet", "anims": ["idle3", "sit12", "walk", "float", "attack", "shoot3"], "movement_type": "ground", "baby_digimon": ["kuramon"], "has_emissive_texture": true}

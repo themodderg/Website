@@ -1,0 +1,1 @@
+{"diet": "poop", "profession": "farmer", "xps": [7, 9], "evo_stage": 4, "hitbox": {"width": 1.5, "height": 2.9}, "default_sp_move": "love_song", "anims": ["idle3", "sit6", "walk7", "fly", "attack", "attack5"], "movement_type": "ground", "baby_digimon": ["botamon", "datirimon", "kiimon", "poyomon", "zurumon"], "has_emissive_texture": true}

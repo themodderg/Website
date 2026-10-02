@@ -1,0 +1,1 @@
+{"profession": "tree_lover", "diet": "botanic", "xps": [2, 7], "evo_stage": 4, "hitbox": {"width": 1.5, "height": 2.813}, "default_sp_move": "deadly_sting", "anims": ["idle3", "sit7", "walk9", "float2", "attack8", "shoot6"], "movement_type": "ground", "baby_digimon": ["yuramon"]}

@@ -1,0 +1,1 @@
+{"profession": "tree_lover", "xps": [8], "evo_stage": 4, "hitbox": {"width": 2.625, "height": 3.375}, "default_sp_move": "divine_axe", "anims": ["idle10", "sit3", "float", "float", "attack5", "shoot"], "movement_type": "flyer", "baby_digimon": ["kiimon"], "has_emissive_texture": true}

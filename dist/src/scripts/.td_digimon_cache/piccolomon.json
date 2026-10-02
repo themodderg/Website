@@ -1,0 +1,1 @@
+{"profession": "transporter", "xps": [8, 4], "evo_stage": 4, "hitbox": {"width": 1.0, "height": 1.0}, "default_sp_move": "holy_shoot", "anims": ["idle", "sit2", "walk7", "fly4", "attack8", "shoot"], "movement_type": "flyer", "baby_digimon": ["poyomon", "yuramon"]}

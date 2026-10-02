@@ -1,0 +1,1 @@
+{"profession": "transporter", "xps": [7], "evo_stage": 4, "hitbox": {"width": 1.125, "height": 3.0}, "default_sp_move": "death_claw", "anims": ["idle", "sit13", "walk7", "fly6", "attack", "shoot8"], "movement_type": "ground", "baby_digimon": ["kiimon", "poyomon"]}

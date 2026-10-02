@@ -1,0 +1,1 @@
+{"profession": "miner", "evolutions": {"gizmonxt": {"conditions": {"mood": "Joyful", "min_wins": "40", "xp": ["7:400"], "rank": "super"}}}, "xps": [7], "evo_stage": 3, "hitbox": {"width": 1.375, "height": 2.313}, "default_sp_move": "disc_attack", "anims": ["idle6", "sit13", "walk8", "float2", "attack6", "shoot"], "movement_type": "flyer", "baby_digimon": ["algomon"]}

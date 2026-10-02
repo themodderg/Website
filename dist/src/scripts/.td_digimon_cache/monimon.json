@@ -1,0 +1,1 @@
+{"diet": "baby", "evolutions": {"koemon": {"conditions": {"always_can": "true"}}}, "xps": [2], "evo_stage": 1, "hitbox": {"width": 1.0, "height": 1.0}, "default_sp_move": "bullet", "anims": ["idle", "sit2", "walk4", "float2", "attack2", "shoot"], "movement_type": "ground", "baby_digimon": ["nyokimon"]}

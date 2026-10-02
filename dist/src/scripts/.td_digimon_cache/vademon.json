@@ -1,0 +1,1 @@
+{"profession": "farmer", "diet": "poop", "xps": [9], "evo_stage": 4, "hitbox": {"width": 1.25, "height": 2.937}, "default_sp_move": "poop_throw", "anims": ["idle6", "sit7", "walk14", "float2", "attack8", "shoot7"], "movement_type": "ground", "baby_digimon": ["bommon", "yuramon", "zurumon"]}

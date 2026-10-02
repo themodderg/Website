@@ -1,0 +1,1 @@
+{"diet": "carnivore", "profession": "miner", "xps": [7, 1, 6], "evo_stage": 4, "hitbox": {"width": 3.625, "height": 2.875}, "default_sp_move": "hyper_heat", "anims": ["idle5", "sit7", "walk7", "fly", "attack3", "shoot"], "movement_type": "ground", "baby_digimon": ["fusamon"], "has_emissive_texture": true}

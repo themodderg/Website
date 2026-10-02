@@ -1,0 +1,1 @@
+{"profession": "farmer", "xps": [2, 7], "evo_stage": 4, "hitbox": {"width": 1.0, "height": 1.875}, "default_sp_move": "secret_identity", "anims": ["idle5", "sit4", "walk7", "fly6", "attack8", "shoot6"], "movement_type": "ground", "baby_digimon": ["kiimon", "poyomon", "yuramon", "zurumon"], "has_emissive_texture": true}

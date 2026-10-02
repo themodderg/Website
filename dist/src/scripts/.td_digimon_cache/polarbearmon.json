@@ -1,0 +1,1 @@
+{"profession": "miner", "xps": [3], "evo_stage": 4, "hitbox": {"width": 3.687, "height": 3.437}, "default_sp_move": "snow_bullet", "anims": ["idle5", "sit", "walk7", "fly", "attack8", "shoot5"], "rider_offset": 0.75, "movement_type": "ground", "baby_digimon": ["punimon"]}

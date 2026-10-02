@@ -1,0 +1,1 @@
+{"profession": "farmer", "xps": [7], "evo_stage": 4, "hitbox": {"width": 1.875, "height": 2.75}, "default_sp_move": "meteor_wing", "anims": ["idle3", "sit9", "walk9", "float2", "attack8", "shoot"], "movement_type": "flyer", "baby_digimon": ["chicomon", "conomon", "jyarimon", "kiimon", "poyomon"]}
