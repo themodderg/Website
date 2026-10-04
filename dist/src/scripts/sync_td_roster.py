@@ -191,11 +191,13 @@ CONFIRMED_ALIASES: dict[str, str] = {
 	"Flarelizamon": "flarerizamon",  # lang: "Flarerizamon"
 	"RedV-dramon": "redveedramon",  # lang: "RedVeedramon"
 	"V-dramon": "veedramon",  # lang: "Veedramon"
-	"Vegimon": "vegiemon",  # lang: "Vegiemon"
 	"BlackGrowmon": "blackgrowlmon",  # lang: "BlackGrowmon"
 	"Growmon": "growlmon",  # lang: "Growmon"
 	"Growmon (Data)": "growlmondata",  # lang: "Growmon(Data)"
 	"Chackmon": "chakmon",  # lang: "Chakmon"
+	"Wizarmon": "wizardmon",  # lang: "Wizardmon" - Trello card dropped the "d"
+		# ("Wizarmon") so it no longer slugifies to the "wizardmon" file; the
+		# lang display still reads "Wizardmon" so lang_slug_map can't bridge it.
 	"Tyranomon": "tyrannomon",  # lang: "Tyrannomon"
 	"Grizzmon": "grizzlymon",  # lang: "Grizzlymon"
 	"Dogmon": "doggymon",  # lang: "Dogmon" - file slug is unrelated to the name
@@ -389,7 +391,8 @@ def resolve_slug(
 		return direct
 	if lang_slug_map and direct in lang_slug_map:
 		return lang_slug_map[direct]
-	return CONFIRMED_ALIASES.get(clean_name)
+	alias = CONFIRMED_ALIASES.get(clean_name)
+	return alias if alias in implemented else None
 
 
 def suggest_slug_candidates(clean_name: str, tier_key: str, implemented: set, lang_display: dict) -> list[str]:
@@ -781,7 +784,13 @@ def main() -> int:
 	lists_by_name = {l["name"]: l["id"] for l in board["lists"]}
 
 	implemented = list_implemented_slugs()
-	implemented |= set(CONFIRMED_ALIASES.values())
+	# Only trust alias targets that still resolve to a real digimon file. A mod
+	# rename can leave an alias pointing at a file that no longer exists; warn
+	# and drop it instead of letting the whole sync crash on the missing json.
+	stale_aliases = {k: v for k, v in CONFIRMED_ALIASES.items() if v not in implemented}
+	for card, target in stale_aliases.items():
+		print(f"WARNING: stale alias {card!r} -> {target!r} (no such file); dropping", file=sys.stderr)
+	implemented |= {v for v in CONFIRMED_ALIASES.values() if v in implemented}
 	lang_display = fetch_lang_display_map()
 	lang_slug_map = build_lang_slug_map(lang_display, implemented)
 
